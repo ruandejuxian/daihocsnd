@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="vi" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trường Đại học Canh sat nhan dan (website nhằm mục đích học tập nghiên cứu cntt, khong phai web chinh thuc vui long khong truy cap)</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        policeRed: '#b91c1c',     // Red primary
+                        policeDark: '#0f172a',    // Dark Navy / Blue primary
+                        policeGold: '#eab308',    // Gold accent
+                        policeBlue: '#1e3a8a',    // Deep Blue
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .hero-bg {
+            background: linear-gradient(rgba(15, 23, 42, 0.85), rgba(185, 28, 28, 0.75)), url('https://placehold.co/1920x1080/0f172a/eab308?text=Truong+Dai+hoc+Canh+sat+Nhan+dan') center/cover no-repeat;
+        }
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f5f9;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #b91c1c;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased font-sans flex flex-col min-h-screen">
+
+    <!-- Top Bar -->
+    <div class="bg-policeDark text-slate-300 text-xs py-2 px-4 sm:px-8 border-b border-slate-800">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+            <div class="flex items-center space-x-6">
+                <span><i class="fas fa-phone-alt text-policeGold mr-1"></i> Hotline: (028) 3796.3112</span>
+                <span><i class="fas fa-envelope text-policeGold mr-1"></i> info@daihocsnd.npo.io.vn</span>
+            </div>
+            <div class="flex items-center space-x-4">
+                <span class="hidden md:inline"><i class="fas fa-calendar-alt text-policeGold mr-1"></i> Thứ Hai - Thứ Sáu: 7:30 - 17:00</span>
+                <div class="flex space-x-3">
+                    <a href="#" class="hover:text-policeGold transition"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="hover:text-policeGold transition"><i class="fab fa-youtube"></i></a>
+                    <a href="#" class="hover:text-policeGold transition"><i class="fab fa-portal-im"></i> Cổng thông tin ĐT</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Navigation Bar -->
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md shadow-md transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-8 py-3 flex justify-between items-center">
+            <!-- Logo & Title -->
+            <a href="#" class="flex items-center space-x-3 group">
+                <div class="w-12 h-12 bg-policeRed rounded-full flex items-center justify-center text-policeGold shadow-lg group-hover:scale-105 transition">
+                    <i class="fas fa-shield-alt text-2xl"></i>
+                </div>
+                <div>
+                    <h1 class="text-base sm:text-lg font-bold text-policeDark tracking-wide uppercase">ĐH Canh sat nhan dan</h1>
+                    <p class="text-xs text-policeRed font-semibold tracking-wider">PEOPLE'S POLICE UNIVERSITY</p>
+                </div>
+            </a>
+
+            <!-- Desktop Menu -->
+            <nav class="hidden lg:flex items-center space-x-1 font-medium text-sm">
+                <a href="#trang-chu" class="px-3 py-2 rounded-lg text-policeRed font-semibold hover:bg-slate-100 transition">Trang chủ</a>
+                <a href="#gioi-thieu" class="px-3 py-2 rounded-lg text-slate-700 hover:text-policeRed hover:bg-slate-100 transition">Giới thiệu</a>
+                <a href="#dao-tao" class="px-3 py-2 rounded-lg text-slate-700 hover:text-policeRed hover:bg-slate-100 transition">Đào tạo</a>
+                <a href="#hoat-dong" class="px-3 py-2 rounded-lg text-slate-700 hover:text-policeRed hover:bg-slate-100 transition">Hoạt động sinh viên</a>
+                <a href="#tin-tuc" class="px-3 py-2 rounded-lg text-slate-700 hover:text-policeRed hover:bg-slate-100 transition">Tin tức</a>
+                <a href="#lien-he" class="px-3 py-2 rounded-lg text-slate-700 hover:text-policeRed hover:bg-slate-100 transition">Liên hệ</a>
+            </nav>
+
+            <!-- Action Button -->
+            <div class="hidden lg:flex items-center space-x-3">
+                <a href="#lien-he" class="bg-policeRed hover:bg-red-800 text-white text-sm px-4 py-2 rounded-lg font-medium shadow transition flex items-center space-x-2">
+                    <i class="fas fa-user-graduate"></i>
+                    <span>Cổng Tuyển Sinh</span>
+                </a>
+            </div>
+
+            <!-- Mobile Menu Toggle -->
+            <button id="menu-toggle" class="lg:hidden text-policeDark text-2xl focus:outline-none p-1">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-white border-t border-slate-100 px-4 pt-2 pb-4 space-y-2 shadow-lg">
+            <a href="#trang-chu" class="block px-3 py-2 rounded text-policeRed font-semibold bg-slate-50">Trang chủ</a>
+            <a href="#gioi-thieu" class="block px-3 py-2 rounded text-slate-700 hover:bg-slate-100">Giới thiệu</a>
+            <a href="#dao-tao" class="block px-3 py-2 rounded text-slate-700 hover:bg-slate-100">Đào tạo</a>
+            <a href="#hoat-dong" class="block px-3 py-2 rounded text-slate-700 hover:bg-slate-100">Hoạt động sinh viên</a>
+            <a href="#tin-tuc" class="block px-3 py-2 rounded text-slate-700 hover:bg-slate-100">Tin tức</a>
+            <a href="#lien-he" class="block px-3 py-2 rounded text-slate-700 hover:bg-slate-100">Liên hệ</a>
+            <div class="pt-2">
+                <a href="#lien-he" class="w-full bg-policeRed text-white text-center block py-2 rounded font-medium">Cổng Tuyển Sinh</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="trang-chu" class="hero-bg text-white py-20 sm:py-32 relative overflow-hidden flex items-center justify-center">
+        <div class="max-w-7xl mx-auto px-4 sm:px-8 text-center relative z-10">
+            <span class="bg-policeGold/20 border border-policeGold text-policeGold text-xs sm:text-sm font-semibold px-4 py-1.5 rounded-full uppercase tracking-wider inline-block mb-6 backdrop-blur-sm">
+                <i class="fas fa-award mr-1"></i> Trung tâm giáo dục & đào tạo Cong an hàng đầu
+            </span>
+            <h2 class="text-3xl sm:text-5xl md:text-6xl font-extrabold tracking-tight mb-6 leading-tight">
+                TRƯỜNG ĐẠI HỌC Canh sat nhan dan
+            </h2>
+            <p class="text-lg sm:text-2xl font-light text-policeGold italic mb-8 max-w-3xl mx-auto">
+                "Bản lĩnh, Nhân văn, Kỷ cương, Trách nhiệm"
+            </p>
+            <p class="text-sm sm:text-base text-slate-200 max-w-2xl mx-auto mb-10 leading-relaxed">
+                Nơi ươm mầm những sĩ quan Cong an nhan dan kiên trung, tinh thông nghiệp vụ, hết lòng vì nước vì dân, đảm bảo an ninh trật tự và bình yên cho Tổ quốc.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+                <a href="#gioi-thieu" class="bg-policeRed hover:bg-red-800 text-white px-8 py-3.5 rounded-xl font-semibold shadow-lg transition flex items-center space-x-2 w-full sm:w-auto justify-center">
+                    <span>Khám phá ngay</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+                <a href="#dao-tao" class="bg-white/10 hover:bg-white/20 border border-white/30 text-white px-8 py-3.5 rounded-xl font-semibold backdrop-blur-sm transition w-full sm:w-auto justify-center flex items-center space-x-2">
+                    <i class="fas fa-graduation-cap"></i>
+                    <span>Chương trình đào tạo</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Counters Section -->
+    <section class="bg-policeDark text-white py-12 relative -mt-8 z-20 max-w-6xl mx-auto rounded-2xl shadow-2xl px-6 sm:px-12 grid grid-cols-2 md:grid-cols-4 gap-8 text-center border border-slate-700/50">
+        <div>
+            <div class="text-3xl sm:text-4xl font-extrabold text-policeGold mb-1 counter" data-target="45">0</div>
+            <div class="text-xs sm:text-sm text-slate-300 uppercase tracking-wide font-medium">Năm thành lập & phát triển</div>
+        </div>
+        <div>
+            <div class="text-3xl sm:text-4xl font-extrabold text-policeGold mb-1 counter" data-target="350">0</div>
+            <div class="text-xs sm:text-sm text-slate-300 uppercase tracking-wide font-medium">Giảng viên & Cán bộ</div>
+        </div>
+        <div>
+            <div class="text-3xl sm:text-4xl font-extrabold text-policeGold mb-1 counter" data-target="15000">0</div>
+            <div class="text-xs sm:text-sm text-slate-300 uppercase tracking-wide font-medium">Học viên đang học tập</div>
+        </div>
+        <div>
+            <div class="text-3xl sm:text-4xl font-extrabold text-policeGold mb-1 counter" data-target="50000">0</div>
+            <div class="text-xs sm:text-sm text-slate-300 uppercase tracking-wide font-medium">Thế hệ học viên tốt nghiệp</div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="gioi-thieu" class="py-20 px-4 sm:px-8 max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div class="space-y-6">
+                <div class="inline-flex items-center space-x-2 bg-red-100 text-policeRed px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider">
+                    <i class="fas fa-info-circle"></i>
+                    <span>Về chúng tôi</span>
+                </div>
+                <h3 class="text-2xl sm:text-4xl font-bold text-policeDark leading-tight">
+                    Truyền thống vẻ vang & Sứ mệnh bảo vệ an ninh quốc gia
+                </h3>
+                <p class="text-slate-600 leading-relaxed text-sm sm:text-base">
+                    Trường Đại học Canh sat nhan dan là cơ sở giáo dục đại học công lập trực thuộc Bộ Công an, có bề dày lịch sử trong công tác đào tạo, bồi dưỡng cán bộ, sĩ quan Canh sat chất lượng cao cho lực lượng Cong an nhan dan.
+                </p>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+                    <div class="bg-white p-4 rounded-xl shadow-sm border border-slate-100 flex items-start space-x-3">
+                        <div class="text-policeRed text-xl mt-1"><i class="fas fa-bullseye"></i></div>
+                        <div>
+                            <h4 class="font-bold text-policeDark text-sm">Sứ mệnh</h4>
+                            <p class="text-xs text-slate-500 mt-1">Đào tạo nguồn nhân lực chất lượng cao, nghiên cứu khoa học an ninh sắc bén.</p>
+                        </div>
+                    </div>
+                    <div class="bg-white p-4 rounded-xl shadow-sm border border-slate-100 flex items-start space-x-3">
+                        <div class="text-policeGold text-xl mt-1"><i class="fas fa-eye"></i></div>
+                        <div>
+                            <h4 class="font-bold text-policeDark text-sm">Tầm nhìn</h4>
+                            <p class="text-xs text-slate-500 mt-1">Trở thành trung tâm đào tạo trọng điểm, đạt chuẩn quốc gia và khu vực.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="pt-4">
+                    <a href="#lien-he" class="inline-flex items-center space-x-2 font-semibold text-policeRed hover:text-red-800 transition">
+                        <span>Tìm hiểu chi tiết cơ cấu tổ chức</span>
+                        <i class="fas fa-chevron-right text-xs"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="relative">
+                <div class="absolute -inset-2 bg-policeGold/30 rounded-3xl blur-lg transform -rotate-2"></div>
+                <div class="relative rounded-2xl overflow-hidden shadow-xl border-4 border-white bg-white">
+                    <img src="https://placehold.co/600x400/1e3a8a/ffffff?text=Co+so+vat+chat+hien+dai" alt="Cơ sở vật chất trường Đại học Canh sat nhan dan" class="w-full h-auto object-cover hover:scale-105 transition duration-500">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Training Programs Section -->
+    <section id="dao-tao" class="bg-slate-100 py-20 px-4 sm:px-8 border-y border-slate-200">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-policeRed font-bold text-xs uppercase tracking-wider bg-red-100 px-3 py-1 rounded-full">Chuyên ngành đào tạo</span>
+                <h3 class="text-3xl font-extrabold text-policeDark mt-3 mb-4">Các Khoa & Chuyên Ngành Mũi Nhọn</h3>
+                <p class="text-slate-600 text-sm sm:text-base">Chương trình đào tạo chuẩn hóa, kết hợp chặt chẽ giữa lý luận chính trị, nghiệp vụ sắc bén và rèn luyện thể lực, võ thuật.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Program 1 -->
+                <div class="bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-200/60 group">
+                    <div class="w-12 h-12 rounded-xl bg-red-50 text-policeRed flex items-center justify-center text-xl mb-4 group-hover:bg-policeRed group-hover:text-white transition">
+                        <i class="fas fa-user-secret"></i>
+                    </div>
+                    <h4 class="text-lg font-bold text-policeDark mb-2">Trinh Sát Canh sat</h4>
+                    <p class="text-xs text-slate-500 mb-4 leading-relaxed">Đào tạo lực lượng trinh sát nắm tình hình, phòng ngừa và đấu tranh phòng chống tội phạm.</p>
+                    <button onclick="openModal('Trinh Sát Canh sat', 'Chuyên ngành Trinh sát Canh sat trang bị cho học viên kiến thức toàn diện về nghiệp vụ trinh sát hình sự, kinh tế, ma túy; rèn luyện bản lĩnh kiên cường, mưu trí, dũng cảm trong mọi hoàn cảnh.')" class="text-policeRed text-xs font-semibold hover:underline flex items-center space-x-1">
+                        <span>Xem chi tiết</span>
+                        <i class="fas fa-arrow-right text-[10px]"></i>
+                    </button>
+                </div>
+
+                <!-- Program 2 -->
+                <div class="bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-200/60 group">
+                    <div class="w-12 h-12 rounded-xl bg-blue-50 text-policeBlue flex items-center justify-center text-xl mb-4 group-hover:bg-policeBlue group-hover:text-white transition">
+                        <i class="fas fa-gavel"></i>
+                    </div>
+                    <h4 class="text-lg font-bold text-policeDark mb-2">Canh sat Điều Tra</h4>
+                    <p class="text-xs text-slate-500 mb-4 leading-relaxed">Chuyên sâu về pháp luật hình sự, phương pháp điều tra tội phạm và thu thập chứng cứ khoa học.</p>
+                    <button onclick="openModal('Canh sat Điều Tra', 'Chuyên ngành Canh sat Điều tra tập trung đào tạo cử nhân luật và nghiệp vụ điều tra, nắm vững tố tụng hình sự, xử lý nghiêm minh tội phạm, bảo vệ công lý và quyền lợi hợp pháp của công dân.')" class="text-policeRed text-xs font-semibold hover:underline flex items-center space-x-1">
+                        <span>Xem chi tiết</span>
+                        <i class="fas fa-arrow-right text-[10px]"></i>
+                    </button>
+                </div>
+
+                <!-- Program 3 -->
+                <div class="bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-200/60 group">
+                    <div class="w-12 h-12 rounded-xl bg-yellow-50 text-yellow-600 flex items-center justify-center text-xl mb-4 group-hover:bg-policeGold group-hover:text-policeDark transition">
+                        <i class="fas fa-fingerprint"></i>
+                    </div>
+                    <h4 class="text-lg font-bold text-policeDark mb-2">Kỹ Thuật Hình Sự</h4>
+                    <p class="text-xs text-slate-500 mb-4 leading-relaxed">Ứng dụng khoa học công nghệ, giám định dấu vết, ADN, kỹ thuật số trong khám nghiệm hiện trường.</p>
+                    <button onclick="openModal('Kỹ Thuật Hình Sự', 'Chuyên ngành Kỹ thuật Hình sự cung cấp kiến thức hiện đại về giám định pháp y, kỹ thuật khám nghiệm hiện trường, phân tích dữ liệu điện tử, góp phần không thể thiếu trong việc tìm ra sự thật vụ án.')" class="text-policeRed text-xs font-semibold hover:underline flex items-center space-x-1">
+                        <span>Xem chi tiết</span>
+                        <i class="fas fa-arrow-right text-[10px]"></i>
+                    </button>
+                </div>
+
+                <!-- Program 4 -->
+                <div class="bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-200/60 group">
+                    <div class="w-12 h-12 rounded-xl bg-slate-100 text-policeDark flex items-center justify-center text-xl mb-4 group-hover:bg-policeDark group-hover:text-white transition">
+                        <i class="fas fa-id-card-alt"></i>
+                    </div>
+                    <h4 class="text-lg font-bold text-policeDark mb-2">QLHC về TTXH</h4>
+                    <p class="text-xs text-slate-500 mb-4 leading-relaxed">Quản lý nhà nước về an ninh trật tự, căn cước công dân, quản lý xuất nhập cảnh và ngành nghề kinh doanh có ĐK.</p>
+                    <button onclick="openModal('Quản Lý Hành Chính Về TTXH', 'Chuyên ngành Quản lý hành chính về trật tự xã hội đào tạo sĩ quan nắm vững các văn bản pháp luật hành chính, công tác quản lý cư trú, trật tự công cộng và xây dựng cơ sở dữ liệu quốc gia.')" class="text-policeRed text-xs font-semibold hover:underline flex items-center space-x-1">
+                        <span>Xem chi tiết</span>
+                        <i class="fas fa-arrow-right text-[10px]"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Student Life & Activities Section -->
+    <section id="hoat-dong" class="py-20 px-4 sm:px-8 max-w-7xl mx-auto">
+        <div class="text-center max-w-2xl mx-auto mb-16">
+            <span class="text-policeRed font-bold text-xs uppercase tracking-wider bg-red-100 px-3 py-1 rounded-full">Đời sống sinh viên</span>
+            <h3 class="text-3xl font-extrabold text-policeDark mt-3 mb-4">Hoạt Động & Rèn Luyện Sĩ Quan Tương Lai</h3>
+            <p class="text-slate-600 text-sm sm:text-base">Môi trường kỷ luật quân ngũ kết hợp các hoạt động phong trào thanh niên sôi nổi, rèn luyện thể chất, võ thuật và tình nguyện vì cộng đồng.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Activity 1 -->
+            <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition border border-slate-200">
+                <img src="https://placehold.co/600x350/b91c1c/ffffff?text=Dieu+lenh+va+Vo+thuat" alt="Điều lệnh võ thuật" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <span class="text-xs font-semibold text-policeRed uppercase tracking-wider">ĐIỀU LỆNH - VÕ THUẬT</span>
+                    <h4 class="text-lg font-bold text-policeDark mt-1 mb-2">Hội thao Điều lệnh, Quân sự, Võ thuật Công an</h4>
+                    <p class="text-xs text-slate-500 line-clamp-3">Các học viên thường xuyên luyện tập điều lệnh đội ngũ, các bài quyền võ thuật CAND, sử dụng thành thạo công cụ hỗ trợ và vũ khí.</p>
+                </div>
+            </div>
+
+            <!-- Activity 2 -->
+            <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition border border-slate-200">
+                <img src="https://placehold.co/600x350/1e3a8a/ffffff?text=Mua+He+Xanh+Tinh+Nguyen" alt="Mùa hè xanh" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <span class="text-xs font-semibold text-policeBlue uppercase tracking-wider">TÌNH NGUYỆN VÌ CỘNG ĐỒNG</span>
+                    <h4 class="text-lg font-bold text-policeDark mt-1 mb-2">Chiến dịch Mùa hè xanh & Hiến máu nhân đạo</h4>
+                    <p class="text-xs text-slate-500 line-clamp-3">Tuổi trẻ CPU luôn xung kích đi đầu trong các hoạt động an sinh xã hội, giúp đỡ nhân dân vùng sâu vùng xa, hiến máu cứu người.</p>
+                </div>
+            </div>
+
+            <!-- Activity 3 -->
+            <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition border border-slate-200">
+                <img src="https://placehold.co/600x350/eab308/0f172a?text=Van+nghe+The+thao" alt="Văn nghệ thể thao" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <span class="text-xs font-semibold text-yellow-600 uppercase tracking-wider">VĂN HÓA - THỂ THAO</span>
+                    <h4 class="text-lg font-bold text-policeDark mt-1 mb-2">Hội diễn văn nghệ & Giải bóng đá truyền thống</h4>
+                    <p class="text-xs text-slate-500 line-clamp-3">Sân chơi rèn luyện sức khỏe, phát huy tài năng nghệ thuật, tăng cường tinh thần đoàn kết giữa các khóa, các liên chi đoàn.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- News & Announcements Section -->
+    <section id="tin-tuc" class="bg-slate-100 py-20 px-4 sm:px-8 border-t border-slate-200">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-12">
+                <div>
+                    <span class="text-policeRed font-bold text-xs uppercase tracking-wider bg-red-100 px-3 py-1 rounded-full">Cập nhật liên tục</span>
+                    <h3 class="text-3xl font-extrabold text-policeDark mt-3">Tin Tức & Thông Báo Tuyển Sinh</h3>
+                </div>
+                <a href="#lien-he" class="mt-4 md:mt-0 text-policeRed font-semibold text-sm hover:underline flex items-center space-x-1">
+                    <span>Xem tất cả bản tin</span>
+                    <i class="fas fa-chevron-right text-xs"></i>
+                </a>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- News 1 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm border border-slate-200 flex flex-col">
+                    <div class="relative">
+                        <img src="https://placehold.co/600x250/0f172a/eab308?text=Thong+bao+tuyen+sinh" alt="Thông báo tuyển sinh" class="w-full h-48 object-cover">
+                        <span class="absolute top-3 left-3 bg-policeRed text-white text-[10px] font-bold px-2.5 py-1 rounded uppercase">Tuyển Sinh</span>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <div class="text-xs text-slate-400 mb-2"><i class="far fa-calendar-alt mr-1"></i> 14/10/2026</div>
+                            <h4 class="font-bold text-policeDark text-base mb-2 leading-snug">Thông báo phương thức tuyển sinh đại học chính quy hệ CAND năm 2026</h4>
+                            <p class="text-xs text-slate-500 line-clamp-2">Hướng dẫn chi tiết về đối tượng, tiêu chuẩn chính trị, sức khỏe và các phương thức xét tuyển vào Trường ĐH Canh sat nhan dan.</p>
+                        </div>
+                        <button onclick="openModal('Tuyển sinh đại học CAND 2026', 'Trường Đại học Canh sat nhan dan thông báo phương thức tuyển sinh bao gồm: Xét tuyển thẳng theo quy chế của Bộ GD&ĐT, xét tuyển kết hợp chứng chỉ ngoại ngữ quốc tế và kết quả thi tốt nghiệp THPT, kết hợp bài thi tuyển sinh riêng của Bộ Công an.')" class="mt-4 text-policeRed text-xs font-semibold hover:underline inline-flex items-center space-x-1">
+                            <span>Chi tiết thông báo</span>
+                            <i class="fas fa-arrow-right text-[10px]"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- News 2 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm border border-slate-200 flex flex-col">
+                    <div class="relative">
+                        <img src="https://placehold.co/600x250/1e3a8a/ffffff?text=Hoi+thao+khoa+hoc" alt="Hội thảo khoa học" class="w-full h-48 object-cover">
+                        <span class="absolute top-3 left-3 bg-policeBlue text-white text-[10px] font-bold px-2.5 py-1 rounded uppercase">Khoa Học</span>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <div class="text-xs text-slate-400 mb-2"><i class="far fa-calendar-alt mr-1"></i> 12/10/2026</div>
+                            <h4 class="font-bold text-policeDark text-base mb-2 leading-snug">Hội thảo khoa học quốc gia về ứng dụng công nghệ phòng chống tội phạm mạng</h4>
+                            <p class="text-xs text-slate-500 line-clamp-2">Nghiên cứu các giải pháp công nghệ số trong việc phát hiện, ngăn chặn tội phạm công nghệ cao trong kỷ nguyên chuyển đổi số.</p>
+                        </div>
+                        <button onclick="openModal('Hội thảo khoa học công nghệ', 'Hội thảo quy tụ các chuyên gia hàng đầu từ các cục nghiệp vụ Bộ Cong an và các trường đại học lớn nhằm thảo luận về các thách thức an ninh mạng và giải pháp đào tạo nguồn nhân lực chất lượng cao.')" class="mt-4 text-policeRed text-xs font-semibold hover:underline inline-flex items-center space-x-1">
+                            <span>Chi tiết thông báo</span>
+                            <i class="fas fa-arrow-right text-[10px]"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- News 3 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm border border-slate-200 flex flex-col">
+                    <div class="relative">
+                        <img src="https://placehold.co/600x250/b91c1c/ffffff?text=Hoat+dong+doan+thanh+nien" alt="Hoạt động đoàn thanh niên" class="w-full h-48 object-cover">
+                        <span class="absolute top-3 left-3 bg-yellow-600 text-white text-[10px] font-bold px-2.5 py-1 rounded uppercase">Hoạt Động</span>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <div class="text-xs text-slate-400 mb-2"><i class="far fa-calendar-alt mr-1"></i> 10/10/2026</div>
+                            <h4 class="font-bold text-policeDark text-base mb-2 leading-snug">Đoàn Thanh niên CPU tổ chức giải thể thao chào mừng ngày thành lập</h4>
+                            <p class="text-xs text-slate-500 line-clamp-2">Sôi nổi các trận đấu bóng đá, bóng chuyền và võ thuật giữa các trung đoàn học viên tại cơ sở trường.</p>
+                        </div>
+                        <button onclick="openModal('Giải thể thao Đoàn Thanh niên', 'Giải thể thao chào mừng năm học mới diễn ra trong không khí hào hứng, thắt chặt tình đoàn kết giữa các chi đoàn học viên, khẳng định tinh thần thể thao khỏe để bảo vệ Tổ quốc.')" class="mt-4 text-policeRed text-xs font-semibold hover:underline inline-flex items-center space-x-1">
+                            <span>Chi tiết thông báo</span>
+                            <i class="fas fa-arrow-right text-[10px]"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="lien-he" class="bg-policeDark text-slate-300 pt-16 pb-8 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+            <!-- Col 1 -->
+            <div class="space-y-4">
+                <div class="flex items-center space-x-3">
+                    <div class="w-10 h-10 bg-policeRed rounded-full flex items-center justify-center text-policeGold shadow-lg">
+                        <i class="fas fa-shield-alt text-lg"></i>
+                    </div>
+                    <div>
+                        <h2 class="text-sm font-bold text-white uppercase tracking-wider">ĐH Canh sat nhan dan</h2>
+                        <p class="text-[10px] text-policeRed font-semibold">PEOPLE'S POLICE UNIVERSITY</p>
+                    </div>
+                </div>
+                <p class="text-xs text-slate-400 leading-relaxed">
+                    Trường Đại học Canh sat nhan dan - Đơn vị anh hùng lực lượng vũ trang nhân dân, nôi đào tạo sĩ quan Canh sat chất lượng cao cho đất nước.
+                </p>
+                <div class="flex space-x-3 pt-2">
+                    <a href="#" class="w-8 h-8 rounded-full bg-slate-800 flex items-center justify-center text-slate-300 hover:bg-policeRed hover:text-white transition"><i class="fab fa-facebook-f text-xs"></i></a>
+                    <a href="#" class="w-8 h-8 rounded-full bg-slate-800 flex items-center justify-center text-slate-300 hover:bg-policeRed hover:text-white transition"><i class="fab fa-youtube text-xs"></i></a>
+                    <a href="#" class="w-8 h-8 rounded-full bg-slate-800 flex items-center justify-center text-slate-300 hover:bg-policeRed hover:text-white transition"><i class="fab fa-telegram text-xs"></i></a>
+                </div>
+            </div>
+
+            <!-- Col 2 -->
+            <div>
+                <h4 class="text-white font-bold text-sm uppercase tracking-wider mb-4 border-b border-slate-800 pb-2">Liên kết nhanh</h4>
+                <ul class="space-y-2 text-xs">
+                    <li><a href="#trang-chu" class="hover:text-policeGold transition"><i class="fas fa-angle-right mr-2 text-policeRed"></i> Trang chủ</a></li>
+                    <li><a href="#gioi-thieu" class="hover:text-policeGold transition"><i class="fas fa-angle-right mr-2 text-policeRed"></i> Giới thiệu lịch sử</a></li>
+                    <li><a href="#dao-tao" class="hover:text-policeGold transition"><i class="fas fa-angle-right mr-2 text-policeRed"></i> Chương trình đào tạo</a></li>
+                    <li><a href="#hoat-dong" class="hover:text-policeGold transition"><i class="fas fa-angle-right mr-2 text-policeRed"></i> Hoạt động sinh viên</a></li>
+                    <li><a href="#tin-tuc" class="hover:text-policeGold transition"><i class="fas fa-angle-right mr-2 text-policeRed"></i> Tin tức - Tuyển sinh</a></li>
+                </ul>
+            </div>
+
+            <!-- Col 3 -->
+            <div>
+                <h4 class="text-white font-bold text-sm uppercase tracking-wider mb-4 border-b border-slate-800 pb-2">Thông tin liên hệ</h4>
+                <ul class="space-y-3 text-xs">
+                    <li class="flex items-start space-x-3">
+                        <i class="fas fa-map-marker-alt text-policeGold mt-1"></i>
+                        <span>42 Nguyễn Hữu Phước - Phường An Lạc - Quận 1 - TP Hồ Chí Minh</span>
+                    </li>
+                    <li class="flex items-center space-x-3">
+                        <i class="fas fa-phone-alt text-policeGold"></i>
+                        <span>(028) 2846.3812 - (028) 346.3843</span>
+                    </li>
+                    <li class="flex items-center space-x-3">
+                        <i class="fas fa-envelope text-policeGold"></i>
+                        <span>contact@daihocsnd.npo.io.vn</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Col 4 -->
+            <div>
+                <h4 class="text-white font-bold text-sm uppercase tracking-wider mb-4 border-b border-slate-800 pb-2">Bản đồ chỉ đường</h4>
+                <div class="rounded-xl overflow-hidden bg-slate-800 border border-slate-700 h-32 flex items-center justify-center text-slate-400 text-xs">
+                    <div class="text-center p-2">
+                        <i class="fas fa-map-marked-alt text-2xl text-policeGold mb-1"></i>
+                        <p>CS1: Binh Thanh, TP.HCM</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-8 border-t border-slate-800 pt-6 flex flex-col sm:flex-row justify-between items-center text-xs text-slate-500">
+            <p>&copy; 2026 Trường Đại học Canh sat nhan dan. All rights reserved.</p>
+            <p class="mt-2 sm:mt-0">Thiết kế thân thiện với sinh viên.</p>
+        </div>
+    </footer>
+
+    <!-- Detail Modal -->
+    <div id="detail-modal" class="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
+        <div class="bg-white rounded-2xl max-w-lg w-full p-6 shadow-2xl relative transform transition-all animate-in">
+            <button onclick="closeModal()" class="absolute top-4 right-4 text-slate-400 hover:text-policeDark text-xl focus:outline-none">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="flex items-center space-x-3 mb-4">
+                <div class="w-10 h-10 bg-red-100 rounded-full flex items-center justify-center text-policeRed">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <h3 id="modal-title" class="text-lg font-bold text-policeDark">Tiêu đề chi tiết</h3>
+            </div>
+            <p id="modal-content" class="text-sm text-slate-600 leading-relaxed mb-6">
+                Nội dung chi tiết sẽ hiển thị ở đây...
+            </p>
+            <div class="flex justify-end">
+                <button onclick="closeModal()" class="bg-policeDark hover:bg-slate-800 text-white text-xs px-5 py-2.5 rounded-xl font-medium transition">
+                    Đóng cửa sổ
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript Interactive Code -->
+    <script>
+        // Mobile Menu Toggle
+        const menuToggle = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when clicking a link
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Modal Functionality
+        const modal = document.getElementById('detail-modal');
+        const modalTitle = document.getElementById('modal-title');
+        const modalContent = document.getElementById('modal-content');
+
+        function openModal(title, content) {
+            modalTitle.textContent = title;
+            modalContent.textContent = content;
+            modal.classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal() {
+            modal.classList.add('hidden');
+            document.body.style.overflow = 'auto';
+        }
+
+        // Close modal on outside click
+        window.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                closeModal();
+            }
+        });
+
+        // Counter Animation with Intersection Observer
+        const counters = document.querySelectorAll('.counter');
+        let animated = false;
+
+        function runCounters() {
+            counters.forEach(counter => {
+                const target = +counter.getAttribute('data-target');
+                let count = 0;
+                const speed = target / 40; // speed of counting
+
+                const updateCount = () => {
+                    count += speed;
+                    if (count < target) {
+                        counter.innerText = Math.ceil(count).toLocaleString();
+                        setTimeout(updateCount, 40);
+                    } else {
+                        counter.innerText = target.toLocaleString() + (target > 1000 && target !== 15000 && target !== 50000 ? '+' : (target >= 15000 ? '+' : ''));
+                    }
+                };
+                updateCount();
+            });
+        }
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting && !animated) {
+                    runCounters();
+                    animated = true;
+                }
+            });
+        }, { threshold: 0.5 });
+
+        const counterSection = document.querySelector('.counter').parentElement.parentElement;
+        observer.observe(counterSection);
+    </script>
+
+</body>
+</html>
