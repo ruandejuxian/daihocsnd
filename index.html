@@ -1,741 +1,568 @@
-
- <!doctype html>
-<html lang="vi">
-
-<head itemscope itemtype="http://schema.org/WebSite">
-	<!-- <base href="https://daihoSND.com/" /> -->
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link rel="SHORTCUT ICON" href="upload/hinhanh/lo-go-dhcs6666_26x32.png" type="image/x-icon" />
-<META NAME="ROBOTS" CONTENT="noodp, INDEX, FOLLOW" />
-<meta name="author" content="TRƯỜNG ĐẠI HỌC CANH SAT NHAN DAN" />
-<meta name="copyright" content="TRƯỜNG ĐẠI HỌC CANH SAT NHAN DAN [contact@daihoSND.com]" />
-<title>TRƯỜNG ĐẠI HỌC CANH SAT NHAN DAN</title>
-<meta name="keywords" content="" />
-<meta name="description" content="" />
-<meta name="DC.title" content="TRƯỜNG ĐẠI HỌC CANH SAT NHAN DAN" />
-<meta name="geo.region" content="VN" />
-<meta name="geo.placename" content="Trụ sở chính: 42 Nguyễn Hữu Phước - Phường An Lạc - Quận 7 - TP. Hồ Chí Minh" />
-<meta name="geo.position" content="10.853741418142036:106.62834708220907" />
-<meta name="ICBM" content="10.853741418142036,106.62834708220907" />
-<meta name="DC.identifier" content="https://daihoSND.com/" />
-<meta property="og:image" content="./upload/hinhanh/logo-trong-150x150-8287.png" />
-<meta property="og:title" content="TRƯỜNG ĐẠI HỌC CANH SAT NHAN DAN" />
-<meta property="og:url" content="https://daihoSND.com/" />
-<meta property="og:site_name" content="https://daihoSND.com/" />
-<meta property="og:description" content="" />
-<meta property="og:type" content="website" />
-<meta property="og:site_name" content="TRƯỜNG ĐẠI HỌC CANH SAT NHAN DAN" />
-<meta property="og:locale" content="vi_VN" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-<!-- <link rel="canonical" href="https://daihoSND.com/" /> -->
-<script>
-  var fired = false;
-  window.addEventListener("scroll", function(){
-  if ((document.documentElement.scrollTop != 0 && fired === false) || (document.body.scrollTop != 0 && fired === false)) {
-      (function(d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s); js.id = id; js.async=true;
-      js.src = "//connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v2.8";
-      fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));
-  fired = true;
-  }
-}, true);
-</script>
-	<link href="css/default.css" rel="stylesheet" />
-<link href="style.css" rel="stylesheet" />
-<link href="css/slick.css" rel="stylesheet" />
-<link href="css/slick-theme.css" rel="stylesheet"/>
-<link href="css/jquery.fancybox.min.css" rel="stylesheet"/>
-<link href="css/css_jssor_slider.css" rel="stylesheet" />
-<link href="magiczoomplus/magiczoomplus.css" rel="stylesheet" />
-<link href="fontawesome/fontawesome-all.css" rel="stylesheet" />
-<link href="media.css" rel="stylesheet" />
-<script type="text/javascript" src="js/jquery.min.js"></script>
-    
-    <!-- <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" ></script>-->
-      
+<!DOCTYPE html>
+<html lang="vi" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trường Đại học Canh sat nhan dan (PPU)</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <script>
-      window.OneSignal = window.OneSignal || [];
-      OneSignal.push(function() {
-        OneSignal.init({
-          appId: "a0485918-5417-4564-a57a-6ad17097a548",
-        });
-      });
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        policeRed: '#b91c1c',     // Red primary
+                        policeDark: '#0f172a',    // Dark Navy / Blue primary
+                        policeGold: '#eab308',    // Gold accent
+                        policeBlue: '#1e3a8a',    // Deep Blue
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
     </script>
-    <!-- Begin EMC Tracking Code -->
-        <script type="text/javascript">
-            var _govaq = window._govaq || [];
-        _govaq.push(['trackPageView']);
-        _govaq.push(['enableLinkTracking']);
-        (function () {
-            _govaq.push(['setTrackerUrl', 'https://f-emc.ngsp.gov.vn/tracking']);
-            _govaq.push(['setSiteId', '4179']);
-            var d = document,
-                g = d.createElement('script'),
-                s = d.getElementsByTagName('script')[0];
-            g.type = 'text/javascript';
-            g.async = true;
-            g.defer = true;
-            g.src = 'https://f-emc.ngsp.gov.vn/embed/gov-tracking.min.js';
-            s.parentNode.insertBefore(g, s);
-        })();
-        </script>
-    <!-- End EMC Tracking Code -->
-
+    <style>
+        .hero-bg {
+            background: linear-gradient(rgba(15, 23, 42, 0.85), rgba(185, 28, 28, 0.75)), url('https://placehold.co/1920x1080/0f172a/eab308?text=Truong+Dai+hoc+Canh+sat+Nhan+dan') center/cover no-repeat;
+        }
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f5f9;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #b91c1c;
+            border-radius: 4px;
+        }
+    </style>
 </head>
+<body class="bg-slate-50 text-slate-800 antialiased font-sans flex flex-col min-h-screen">
 
-<body>
-
-<div id="wapper">
-    <div class="header main_fix">
-        <a href="" class="logo"><img src="upload/hinhanh/dhSND-07-07-2978.png" alt="Banner" onerror="this.src='//placehold.it/260x90'" /></a>
-<div class="diachi">
-    <p><i class="fa fa-home" aria-hidden="true"></i>Trụ sở chính: 42 Nguyễn Hữu Phước - Phường An Lạc - Quận 7 - TP. Hồ Chí Minh</p>    </div>        <div class="clear"></div>
-    </div><!---END .header-->
-
-    <div class="wap_menu">
-         
-<div class="menu_mobi"><p class="icon_menu_mobi"><i class="fas fa-bars"></i> Menu</p><p class="menu_baophu"></p><a href="" class="home_mobi"><i class="fa fa-home" aria-hidden="true"></i></a></div>
-
-<div class="menu main_fix">
-    <ul class="hidden_mobi">
-        <li><a class="active" href="">Trang chủ</a></li>
-        
-        <li><a class="" href="gioi-thieu">Giới thiệu</a></li>
-
-        <li><a class="" href="tin-tuc">Tin tức</a>
-            <ul><li><a href="tin-noi-bat">Tin nổi bật</a><ul><li><a href="tin-quoc-te">Tin quốc tế</a></li><li><a href="tong-bi-thu-nguyen-phu-trong-voi-dang-nha-nuoc-va-nhan-dan-viet-nam">Tổng Bí thư Nguyễn Phú Trọng với Đảng, Nhà nước và Nhân dân Việt Nam</a></li><li><a href="dai-hoi-dang-cac-cap-va-dai-hoi-dai-bieu-toan-quoc-lan-thu-xiv-cua-dang">Đại hội Đảng các cấp và Đại hội Đại biểu toàn quốc lần thứ XIV của Đảng</a></li><li><a href="tin-trong-nuoc">Tin trong nước</a></li><li><a href="tin-cua-truong">Tin của trường</a></li><li><a href="thong-tin-tuyen-sinh">Thông tin tuyển sinh</a></li><li><a href="hoat-dong-cua-nganh">Hoạt động của ngành</a></li><li><a href="phong-chong-dich-benh-covid--19">Phòng Chống dịch bệnh Covid - 19</a></li></ul></li><li><a href="giao-duc--dao-tao">Giáo dục - Đào tạo</a><ul><li><a href="quy-dinh--quy-che">Quy định - Quy chế</a></li><li><a href="khao-thi-va-dam-bao-chat-luong-dao-tao">Khảo thí và đảm bảo chất lượng đào tạo</a></li><li><a href="doi-moi-nd-pp-day-hoc">Đổi mới ND-PP dạy học</a></li><li><a href="quan-ly-dao-tao">Quản lý đào tạo</a></li></ul></li><li><a href="nghien-cuu--trao-doi">Nghiên cứu - Trao đổi</a><ul><li><a href="nghien-cuu--trao-doi">Nghiên cứu - Trao đổi</a></li><li><a href="phong-chong-tham-nhung">Phòng chống tham nhũng</a></li><li><a href="bao-ve-nen-tang-tu-tuong-cua-dang">Bảo vệ nền tảng tư tưởng của Đảng</a></li><li><a href="bai-du-thi-bao-dam-an-ninh-trat-tu-o-co-so">Bài dự thi "Bảo đảm an ninh, trật tự ở cơ sở"</a></li><li><a href="tuyen-truyen-pho-bien-giao-duc-phap-luat">Tuyên truyền phổ biến giáo dục pháp luật</a></li></ul></li><li><a href="khoa-hoc-cong-nghe">Khoa học Công nghệ</a><ul><li><a href="hoi-thao-khoa-hoc">Hội thảo khoa học</a></li></ul></li><li><a href="cac-mat-cong-tac">Các mặt công tác</a><ul><li><a href="cong-tac-to-chuc">Công tác tổ chức</a></li><li><a href="ky-niem-75-nam-ngay-truyen-thong-luc-luong-hau-can--ky-thuat-cand">Kỷ niệm 75 năm Ngày truyền thống lực lượng Hậu cần - Kỹ thuật CAND</a></li><li><a href="cong-tac-dang">Công tác Đảng</a></li><li><a href="doan-the">Đoàn thể</a></li><li><a href="hau-can">Hậu Cần</a></li><li><a href="doi-ngoai-va-hop-tac-quoc-te">Đối ngoại và hợp tác quốc tế</a></li><li><a href="cong-tac-khac">Công tác khác</a></li></ul></li><li><a href="dao-tao-sinh-vien-quoc-te">Đào tạo sinh viên Quốc tế</a></li><li><a href="goc-chia-se">Góc chia sẻ</a><ul><li><a href="cuu-sinh-vien">Cựu sinh viên</a></li><li><a href="hoc-vien-nha-truong">Học viên Nhà trường</a></li><li><a href="dien-hinh-tien-tien">Điển hình tiên tiến</a></li></ul></li></ul>        </li>
-
-        <li><a class="" href="van-ban">Hệ thống văn bản</a>
-        </li>
-
-        <li><a href="https://daihoSND.com/tapchi">Tạp chí KHGD</a></li>
-        
-        <li><a class="" href="tra-diem-thi">Tra cứu điểm thi</a></li>
-        
-        <li><a class="" href="su-kien">Sự kiện<img src="images/i_hot.gif" alt="Sự kiện"></a>
-            <ul><li><a href="thong-bao-nha-truong">THÔNG BÁO NHÀ TRƯỜNG</a><li><a href="thu-vien-video">THƯ VIỆN VIDEO</a><li><a href="ky-niem-46-nam-ngay-truyen-thong-thanh-lap-truong">KỶ NIỆM 46 NĂM NGÀY TRUYỀN THỐNG THÀNH LẬP TRƯỜNG</a></ul>        </li>
-    </ul>
-
-    <div class="lang hidden_mobi">
-        <a href="index.php?com=ngonngu&lang=en" title="English"><img src="images/en.png" alt="English" /> </a>
-        <a href="index.php?com=ngonngu&lang=" title="Việt Nam"><img src="images/vi.png" alt="Việt Nam" /></a>
-    </div><!--END #lang-->
-
-    <a class="search hidden_mobi" href="tim-kiem"><i class="fa fa-search" aria-hidden="true"></i></a>
-</div>
-    </div><!---END .wap_menu-->
-
-   
-    <div class="slider clearfix">
-        <div id="slider1_container" style="position: relative;width: 1366px; height: 500px;">
-    <div u="slides" style="cursor: move;width: 1366px; height: 500px;overflow: hidden;">
-                	<div><a href=""><img u="image" class="no_lazy" src="upload/hinhanh/slidephoto-01-1709632180.jpg" alt="" /></a></div>
-                	<div><a href=""><img u="image" class="no_lazy" src="upload/hinhanh/ba-nhat-1790221121.jpg" alt="" /></a></div>
-                	<div><a href=""><img u="image" class="no_lazy" src="upload/hinhanh/30-4-1-0669.jpg" alt="" /></a></div>
-                	<div><a href=""><img u="image" class="no_lazy" src="upload/hinhanh/dh-dang-9231.jpg" alt="" /></a></div>
-                	<div><a href=""><img u="image" class="no_lazy" src="upload/hinhanh/z5843040435845_5328be6aaf50b6d98e028ba612a58594-1501.jpg" alt="" /></a></div>
-                	<div><a href=""><img u="image" class="no_lazy" src="upload/hinhanh/z5843040435237_ad1889d63bb65a0189936e11fe61d611-8866.jpg" alt="" /></a></div>
-                	<div><a href=""><img u="image" class="no_lazy" src="upload/hinhanh/z5843040438191_256b596160ac682f8b0dfb4483fc6319-5872.jpg" alt="" /></a></div>
-                        
+    <!-- Top Bar -->
+    <div class="bg-policeDark text-slate-300 text-xs py-2 px-4 sm:px-8 border-b border-slate-800">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+            <div class="flex items-center space-x-6">
+                <span><i class="fas fa-phone-alt text-policeGold mr-1"></i> Hotline: (028) 3796.3112</span>
+                <span><i class="fas fa-envelope text-policeGold mr-1"></i> info@daihocsnd.npo.io.vn</span>
+            </div>
+            <div class="flex items-center space-x-4">
+                <span class="hidden md:inline"><i class="fas fa-calendar-alt text-policeGold mr-1"></i> Thứ Hai - Thứ Sáu: 7:30 - 17:00</span>
+                <div class="flex space-x-3">
+                    <a href="#" class="hover:text-policeGold transition"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="hover:text-policeGold transition"><i class="fab fa-youtube"></i></a>
+                    <a href="#" class="hover:text-policeGold transition"><i class="fab fa-portal-im"></i> Cổng thông tin ĐT</a>
+                </div>
+            </div>
+        </div>
     </div>
-    <span u="arrowleft" class="jssora05l" style="top:40%;"></span>
-    <span u="arrowright" class="jssora05r" style="top:40%;"></span>
-</div>
- 
 
-<div class="lkweb main_fix control_slick">
-	        <div><div class="item_lk">
-            <p class="img">
-                <a href="https://daihoSND.com/tapchi/index.php" title=""><img class="no_lazy" data-lazy="upload/news/tc9578_200x150.png" alt="" onerror="this.src='images/200x150.png'" /></a>
-            </p>      
-            <h4><a href="https://daihoSND.com/tapchi/index.php" title=""></a><a href="admin/index.php?com=news&act=edit&id_danhmuc=&id_list=&type=lkweb&id=4334" class="sua_admin" target="_blank" title="Sửa bài viết" rel="nofollow"><i class="fas fa-pencil-alt"></i></a></h4>
-        </div></div>
-            <div><div class="item_lk">
-            <p class="img">
-                <a href="https://www.facebook.com/chuyendongppu/" title=""><img class="no_lazy" data-lazy="upload/news/chuyen-dong-ppu-01-013151_200x150.png" alt="" onerror="this.src='images/200x150.png'" /></a>
-            </p>      
-            <h4><a href="https://www.facebook.com/chuyendongppu/" title=""></a><a href="admin/index.php?com=news&act=edit&id_danhmuc=&id_list=&type=lkweb&id=7032" class="sua_admin" target="_blank" title="Sửa bài viết" rel="nofollow"><i class="fas fa-pencil-alt"></i></a></h4>
-        </div></div>
+    <!-- Main Navigation Bar -->
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md shadow-md transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-8 py-3 flex justify-between items-center">
+            <!-- Logo & Title -->
+            <a href="#" class="flex items-center space-x-3 group">
+                <div class="w-12 h-12 bg-policeRed rounded-full flex items-center justify-center text-policeGold shadow-lg group-hover:scale-105 transition">
+                    <i class="fas fa-shield-alt text-2xl"></i>
+                </div>
+                <div>
+                    <h1 class="text-base sm:text-lg font-bold text-policeDark tracking-wide uppercase">ĐH Canh sat nhan dan</h1>
+                    <p class="text-xs text-policeRed font-semibold tracking-wider">PEOPLE'S POLICE UNIVERSITY</p>
+                </div>
+            </a>
+
+            <!-- Desktop Menu -->
+            <nav class="hidden lg:flex items-center space-x-1 font-medium text-sm">
+                <a href="#trang-chu" class="px-3 py-2 rounded-lg text-policeRed font-semibold hover:bg-slate-100 transition">Trang chủ</a>
+                <a href="#gioi-thieu" class="px-3 py-2 rounded-lg text-slate-700 hover:text-policeRed hover:bg-slate-100 transition">Giới thiệu</a>
+                <a href="#dao-tao" class="px-3 py-2 rounded-lg text-slate-700 hover:text-policeRed hover:bg-slate-100 transition">Đào tạo</a>
+                <a href="#hoat-dong" class="px-3 py-2 rounded-lg text-slate-700 hover:text-policeRed hover:bg-slate-100 transition">Hoạt động sinh viên</a>
+                <a href="#tin-tuc" class="px-3 py-2 rounded-lg text-slate-700 hover:text-policeRed hover:bg-slate-100 transition">Tin tức</a>
+                <a href="#lien-he" class="px-3 py-2 rounded-lg text-slate-700 hover:text-policeRed hover:bg-slate-100 transition">Liên hệ</a>
+            </nav>
+
+            <!-- Action Button -->
+            <div class="hidden lg:flex items-center space-x-3">
+                <a href="#lien-he" class="bg-policeRed hover:bg-red-800 text-white text-sm px-4 py-2 rounded-lg font-medium shadow transition flex items-center space-x-2">
+                    <i class="fas fa-user-graduate"></i>
+                    <span>Cổng Tuyển Sinh</span>
+                </a>
+            </div>
+
+            <!-- Mobile Menu Toggle -->
+            <button id="menu-toggle" class="lg:hidden text-policeDark text-2xl focus:outline-none p-1">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-white border-t border-slate-100 px-4 pt-2 pb-4 space-y-2 shadow-lg">
+            <a href="#trang-chu" class="block px-3 py-2 rounded text-policeRed font-semibold bg-slate-50">Trang chủ</a>
+            <a href="#gioi-thieu" class="block px-3 py-2 rounded text-slate-700 hover:bg-slate-100">Giới thiệu</a>
+            <a href="#dao-tao" class="block px-3 py-2 rounded text-slate-700 hover:bg-slate-100">Đào tạo</a>
+            <a href="#hoat-dong" class="block px-3 py-2 rounded text-slate-700 hover:bg-slate-100">Hoạt động sinh viên</a>
+            <a href="#tin-tuc" class="block px-3 py-2 rounded text-slate-700 hover:bg-slate-100">Tin tức</a>
+            <a href="#lien-he" class="block px-3 py-2 rounded text-slate-700 hover:bg-slate-100">Liên hệ</a>
+            <div class="pt-2">
+                <a href="#lien-he" class="w-full bg-policeRed text-white text-center block py-2 rounded font-medium">Cổng Tuyển Sinh</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="trang-chu" class="hero-bg text-white py-20 sm:py-32 relative overflow-hidden flex items-center justify-center">
+        <div class="max-w-7xl mx-auto px-4 sm:px-8 text-center relative z-10">
+            <span class="bg-policeGold/20 border border-policeGold text-policeGold text-xs sm:text-sm font-semibold px-4 py-1.5 rounded-full uppercase tracking-wider inline-block mb-6 backdrop-blur-sm">
+                <i class="fas fa-award mr-1"></i> Trung tâm giáo dục & đào tạo Cong an hàng đầu
+            </span>
+            <h2 class="text-3xl sm:text-5xl md:text-6xl font-extrabold tracking-tight mb-6 leading-tight">
+                TRƯỜNG ĐẠI HỌC Canh sat nhan dan
+            </h2>
+            <p class="text-lg sm:text-2xl font-light text-policeGold italic mb-8 max-w-3xl mx-auto">
+                "Bản lĩnh, Nhân văn, Kỷ cương, Trách nhiệm"
+            </p>
+            <p class="text-sm sm:text-base text-slate-200 max-w-2xl mx-auto mb-10 leading-relaxed">
+                Nơi ươm mầm những sĩ quan Cong an nhan dan kiên trung, tinh thông nghiệp vụ, hết lòng vì nước vì dân, đảm bảo an ninh trật tự và bình yên cho Tổ quốc.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+                <a href="#gioi-thieu" class="bg-policeRed hover:bg-red-800 text-white px-8 py-3.5 rounded-xl font-semibold shadow-lg transition flex items-center space-x-2 w-full sm:w-auto justify-center">
+                    <span>Khám phá ngay</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+                <a href="#dao-tao" class="bg-white/10 hover:bg-white/20 border border-white/30 text-white px-8 py-3.5 rounded-xl font-semibold backdrop-blur-sm transition w-full sm:w-auto justify-center flex items-center space-x-2">
+                    <i class="fas fa-graduation-cap"></i>
+                    <span>Chương trình đào tạo</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Counters Section -->
+    <section class="bg-policeDark text-white py-12 relative -mt-8 z-20 max-w-6xl mx-auto rounded-2xl shadow-2xl px-6 sm:px-12 grid grid-cols-2 md:grid-cols-4 gap-8 text-center border border-slate-700/50">
+        <div>
+            <div class="text-3xl sm:text-4xl font-extrabold text-policeGold mb-1 counter" data-target="45">0</div>
+            <div class="text-xs sm:text-sm text-slate-300 uppercase tracking-wide font-medium">Năm thành lập & phát triển</div>
+        </div>
+        <div>
+            <div class="text-3xl sm:text-4xl font-extrabold text-policeGold mb-1 counter" data-target="350">0</div>
+            <div class="text-xs sm:text-sm text-slate-300 uppercase tracking-wide font-medium">Giảng viên & Cán bộ</div>
+        </div>
+        <div>
+            <div class="text-3xl sm:text-4xl font-extrabold text-policeGold mb-1 counter" data-target="15000">0</div>
+            <div class="text-xs sm:text-sm text-slate-300 uppercase tracking-wide font-medium">Học viên đang học tập</div>
+        </div>
+        <div>
+            <div class="text-3xl sm:text-4xl font-extrabold text-policeGold mb-1 counter" data-target="50000">0</div>
+            <div class="text-xs sm:text-sm text-slate-300 uppercase tracking-wide font-medium">Thế hệ học viên tốt nghiệp</div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="gioi-thieu" class="py-20 px-4 sm:px-8 max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div class="space-y-6">
+                <div class="inline-flex items-center space-x-2 bg-red-100 text-policeRed px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider">
+                    <i class="fas fa-info-circle"></i>
+                    <span>Về chúng tôi</span>
+                </div>
+                <h3 class="text-2xl sm:text-4xl font-bold text-policeDark leading-tight">
+                    Truyền thống vẻ vang & Sứ mệnh bảo vệ an ninh quốc gia
+                </h3>
+                <p class="text-slate-600 leading-relaxed text-sm sm:text-base">
+                    Trường Đại học Canh sat nhan dan là cơ sở giáo dục đại học công lập trực thuộc Bộ Công an, có bề dày lịch sử trong công tác đào tạo, bồi dưỡng cán bộ, sĩ quan Canh sat chất lượng cao cho lực lượng Cong an nhan dan.
+                </p>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+                    <div class="bg-white p-4 rounded-xl shadow-sm border border-slate-100 flex items-start space-x-3">
+                        <div class="text-policeRed text-xl mt-1"><i class="fas fa-bullseye"></i></div>
+                        <div>
+                            <h4 class="font-bold text-policeDark text-sm">Sứ mệnh</h4>
+                            <p class="text-xs text-slate-500 mt-1">Đào tạo nguồn nhân lực chất lượng cao, nghiên cứu khoa học an ninh sắc bén.</p>
+                        </div>
+                    </div>
+                    <div class="bg-white p-4 rounded-xl shadow-sm border border-slate-100 flex items-start space-x-3">
+                        <div class="text-policeGold text-xl mt-1"><i class="fas fa-eye"></i></div>
+                        <div>
+                            <h4 class="font-bold text-policeDark text-sm">Tầm nhìn</h4>
+                            <p class="text-xs text-slate-500 mt-1">Trở thành trung tâm đào tạo trọng điểm, đạt chuẩn quốc gia và khu vực.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="pt-4">
+                    <a href="#lien-he" class="inline-flex items-center space-x-2 font-semibold text-policeRed hover:text-red-800 transition">
+                        <span>Tìm hiểu chi tiết cơ cấu tổ chức</span>
+                        <i class="fas fa-chevron-right text-xs"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="relative">
+                <div class="absolute -inset-2 bg-policeGold/30 rounded-3xl blur-lg transform -rotate-2"></div>
+                <div class="relative rounded-2xl overflow-hidden shadow-xl border-4 border-white bg-white">
+                    <img src="https://placehold.co/600x400/1e3a8a/ffffff?text=Co+so+vat+chat+hien+dai" alt="Cơ sở vật chất trường Đại học Canh sat nhan dan" class="w-full h-auto object-cover hover:scale-105 transition duration-500">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Training Programs Section -->
+    <section id="dao-tao" class="bg-slate-100 py-20 px-4 sm:px-8 border-y border-slate-200">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-policeRed font-bold text-xs uppercase tracking-wider bg-red-100 px-3 py-1 rounded-full">Chuyên ngành đào tạo</span>
+                <h3 class="text-3xl font-extrabold text-policeDark mt-3 mb-4">Các Khoa & Chuyên Ngành Mũi Nhọn</h3>
+                <p class="text-slate-600 text-sm sm:text-base">Chương trình đào tạo chuẩn hóa, kết hợp chặt chẽ giữa lý luận chính trị, nghiệp vụ sắc bén và rèn luyện thể lực, võ thuật.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Program 1 -->
+                <div class="bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-200/60 group">
+                    <div class="w-12 h-12 rounded-xl bg-red-50 text-policeRed flex items-center justify-center text-xl mb-4 group-hover:bg-policeRed group-hover:text-white transition">
+                        <i class="fas fa-user-secret"></i>
+                    </div>
+                    <h4 class="text-lg font-bold text-policeDark mb-2">Trinh Sát Canh sat</h4>
+                    <p class="text-xs text-slate-500 mb-4 leading-relaxed">Đào tạo lực lượng trinh sát nắm tình hình, phòng ngừa và đấu tranh phòng chống tội phạm.</p>
+                    <button onclick="openModal('Trinh Sát Canh sat', 'Chuyên ngành Trinh sát Canh sat trang bị cho học viên kiến thức toàn diện về nghiệp vụ trinh sát hình sự, kinh tế, ma túy; rèn luyện bản lĩnh kiên cường, mưu trí, dũng cảm trong mọi hoàn cảnh.')" class="text-policeRed text-xs font-semibold hover:underline flex items-center space-x-1">
+                        <span>Xem chi tiết</span>
+                        <i class="fas fa-arrow-right text-[10px]"></i>
+                    </button>
+                </div>
+
+                <!-- Program 2 -->
+                <div class="bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-200/60 group">
+                    <div class="w-12 h-12 rounded-xl bg-blue-50 text-policeBlue flex items-center justify-center text-xl mb-4 group-hover:bg-policeBlue group-hover:text-white transition">
+                        <i class="fas fa-gavel"></i>
+                    </div>
+                    <h4 class="text-lg font-bold text-policeDark mb-2">Canh sat Điều Tra</h4>
+                    <p class="text-xs text-slate-500 mb-4 leading-relaxed">Chuyên sâu về pháp luật hình sự, phương pháp điều tra tội phạm và thu thập chứng cứ khoa học.</p>
+                    <button onclick="openModal('Canh sat Điều Tra', 'Chuyên ngành Canh sat Điều tra tập trung đào tạo cử nhân luật và nghiệp vụ điều tra, nắm vững tố tụng hình sự, xử lý nghiêm minh tội phạm, bảo vệ công lý và quyền lợi hợp pháp của công dân.')" class="text-policeRed text-xs font-semibold hover:underline flex items-center space-x-1">
+                        <span>Xem chi tiết</span>
+                        <i class="fas fa-arrow-right text-[10px]"></i>
+                    </button>
+                </div>
+
+                <!-- Program 3 -->
+                <div class="bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-200/60 group">
+                    <div class="w-12 h-12 rounded-xl bg-yellow-50 text-yellow-600 flex items-center justify-center text-xl mb-4 group-hover:bg-policeGold group-hover:text-policeDark transition">
+                        <i class="fas fa-fingerprint"></i>
+                    </div>
+                    <h4 class="text-lg font-bold text-policeDark mb-2">Kỹ Thuật Hình Sự</h4>
+                    <p class="text-xs text-slate-500 mb-4 leading-relaxed">Ứng dụng khoa học công nghệ, giám định dấu vết, ADN, kỹ thuật số trong khám nghiệm hiện trường.</p>
+                    <button onclick="openModal('Kỹ Thuật Hình Sự', 'Chuyên ngành Kỹ thuật Hình sự cung cấp kiến thức hiện đại về giám định pháp y, kỹ thuật khám nghiệm hiện trường, phân tích dữ liệu điện tử, góp phần không thể thiếu trong việc tìm ra sự thật vụ án.')" class="text-policeRed text-xs font-semibold hover:underline flex items-center space-x-1">
+                        <span>Xem chi tiết</span>
+                        <i class="fas fa-arrow-right text-[10px]"></i>
+                    </button>
+                </div>
+
+                <!-- Program 4 -->
+                <div class="bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-200/60 group">
+                    <div class="w-12 h-12 rounded-xl bg-slate-100 text-policeDark flex items-center justify-center text-xl mb-4 group-hover:bg-policeDark group-hover:text-white transition">
+                        <i class="fas fa-id-card-alt"></i>
+                    </div>
+                    <h4 class="text-lg font-bold text-policeDark mb-2">QLHC về TTXH</h4>
+                    <p class="text-xs text-slate-500 mb-4 leading-relaxed">Quản lý nhà nước về an ninh trật tự, căn cước công dân, quản lý xuất nhập cảnh và ngành nghề kinh doanh có ĐK.</p>
+                    <button onclick="openModal('Quản Lý Hành Chính Về TTXH', 'Chuyên ngành Quản lý hành chính về trật tự xã hội đào tạo sĩ quan nắm vững các văn bản pháp luật hành chính, công tác quản lý cư trú, trật tự công cộng và xây dựng cơ sở dữ liệu quốc gia.')" class="text-policeRed text-xs font-semibold hover:underline flex items-center space-x-1">
+                        <span>Xem chi tiết</span>
+                        <i class="fas fa-arrow-right text-[10px]"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Student Life & Activities Section -->
+    <section id="hoat-dong" class="py-20 px-4 sm:px-8 max-w-7xl mx-auto">
+        <div class="text-center max-w-2xl mx-auto mb-16">
+            <span class="text-policeRed font-bold text-xs uppercase tracking-wider bg-red-100 px-3 py-1 rounded-full">Đời sống sinh viên</span>
+            <h3 class="text-3xl font-extrabold text-policeDark mt-3 mb-4">Hoạt Động & Rèn Luyện Sĩ Quan Tương Lai</h3>
+            <p class="text-slate-600 text-sm sm:text-base">Môi trường kỷ luật quân ngũ kết hợp các hoạt động phong trào thanh niên sôi nổi, rèn luyện thể chất, võ thuật và tình nguyện vì cộng đồng.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Activity 1 -->
+            <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition border border-slate-200">
+                <img src="https://placehold.co/600x350/b91c1c/ffffff?text=Dieu+lenh+va+Vo+thuat" alt="Điều lệnh võ thuật" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <span class="text-xs font-semibold text-policeRed uppercase tracking-wider">ĐIỀU LỆNH - VÕ THUẬT</span>
+                    <h4 class="text-lg font-bold text-policeDark mt-1 mb-2">Hội thao Điều lệnh, Quân sự, Võ thuật Công an</h4>
+                    <p class="text-xs text-slate-500 line-clamp-3">Các học viên thường xuyên luyện tập điều lệnh đội ngũ, các bài quyền võ thuật CAND, sử dụng thành thạo công cụ hỗ trợ và vũ khí.</p>
+                </div>
+            </div>
+
+            <!-- Activity 2 -->
+            <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition border border-slate-200">
+                <img src="https://placehold.co/600x350/1e3a8a/ffffff?text=Mua+He+Xanh+Tinh+Nguyen" alt="Mùa hè xanh" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <span class="text-xs font-semibold text-policeBlue uppercase tracking-wider">TÌNH NGUYỆN VÌ CỘNG ĐỒNG</span>
+                    <h4 class="text-lg font-bold text-policeDark mt-1 mb-2">Chiến dịch Mùa hè xanh & Hiến máu nhân đạo</h4>
+                    <p class="text-xs text-slate-500 line-clamp-3">Tuổi trẻ PPU luôn xung kích đi đầu trong các hoạt động an sinh xã hội, giúp đỡ nhân dân vùng sâu vùng xa, hiến máu cứu người.</p>
+                </div>
+            </div>
+
+            <!-- Activity 3 -->
+            <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition border border-slate-200">
+                <img src="https://placehold.co/600x350/eab308/0f172a?text=Van+nghe+The+thao" alt="Văn nghệ thể thao" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <span class="text-xs font-semibold text-yellow-600 uppercase tracking-wider">VĂN HÓA - THỂ THAO</span>
+                    <h4 class="text-lg font-bold text-policeDark mt-1 mb-2">Hội diễn văn nghệ & Giải bóng đá truyền thống</h4>
+                    <p class="text-xs text-slate-500 line-clamp-3">Sân chơi rèn luyện sức khỏe, phát huy tài năng nghệ thuật, tăng cường tinh thần đoàn kết giữa các khóa, các liên chi đoàn.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- News & Announcements Section -->
+    <section id="tin-tuc" class="bg-slate-100 py-20 px-4 sm:px-8 border-t border-slate-200">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-12">
+                <div>
+                    <span class="text-policeRed font-bold text-xs uppercase tracking-wider bg-red-100 px-3 py-1 rounded-full">Cập nhật liên tục</span>
+                    <h3 class="text-3xl font-extrabold text-policeDark mt-3">Tin Tức & Thông Báo Tuyển Sinh</h3>
+                </div>
+                <a href="#lien-he" class="mt-4 md:mt-0 text-policeRed font-semibold text-sm hover:underline flex items-center space-x-1">
+                    <span>Xem tất cả bản tin</span>
+                    <i class="fas fa-chevron-right text-xs"></i>
+                </a>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- News 1 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm border border-slate-200 flex flex-col">
+                    <div class="relative">
+                        <img src="https://placehold.co/600x250/0f172a/eab308?text=Thong+bao+tuyen+sinh" alt="Thông báo tuyển sinh" class="w-full h-48 object-cover">
+                        <span class="absolute top-3 left-3 bg-policeRed text-white text-[10px] font-bold px-2.5 py-1 rounded uppercase">Tuyển Sinh</span>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <div class="text-xs text-slate-400 mb-2"><i class="far fa-calendar-alt mr-1"></i> 14/10/2026</div>
+                            <h4 class="font-bold text-policeDark text-base mb-2 leading-snug">Thông báo phương thức tuyển sinh đại học chính quy hệ CAND năm 2026</h4>
+                            <p class="text-xs text-slate-500 line-clamp-2">Hướng dẫn chi tiết về đối tượng, tiêu chuẩn chính trị, sức khỏe và các phương thức xét tuyển vào Trường ĐH Canh sat nhan dan.</p>
+                        </div>
+                        <button onclick="openModal('Tuyển sinh đại học CAND 2026', 'Trường Đại học Canh sat nhan dan thông báo phương thức tuyển sinh bao gồm: Xét tuyển thẳng theo quy chế của Bộ GD&ĐT, xét tuyển kết hợp chứng chỉ ngoại ngữ quốc tế và kết quả thi tốt nghiệp THPT, kết hợp bài thi tuyển sinh riêng của Bộ Công an.')" class="mt-4 text-policeRed text-xs font-semibold hover:underline inline-flex items-center space-x-1">
+                            <span>Chi tiết thông báo</span>
+                            <i class="fas fa-arrow-right text-[10px]"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- News 2 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm border border-slate-200 flex flex-col">
+                    <div class="relative">
+                        <img src="https://placehold.co/600x250/1e3a8a/ffffff?text=Hoi+thao+khoa+hoc" alt="Hội thảo khoa học" class="w-full h-48 object-cover">
+                        <span class="absolute top-3 left-3 bg-policeBlue text-white text-[10px] font-bold px-2.5 py-1 rounded uppercase">Khoa Học</span>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <div class="text-xs text-slate-400 mb-2"><i class="far fa-calendar-alt mr-1"></i> 12/10/2026</div>
+                            <h4 class="font-bold text-policeDark text-base mb-2 leading-snug">Hội thảo khoa học quốc gia về ứng dụng công nghệ phòng chống tội phạm mạng</h4>
+                            <p class="text-xs text-slate-500 line-clamp-2">Nghiên cứu các giải pháp công nghệ số trong việc phát hiện, ngăn chặn tội phạm công nghệ cao trong kỷ nguyên chuyển đổi số.</p>
+                        </div>
+                        <button onclick="openModal('Hội thảo khoa học công nghệ', 'Hội thảo quy tụ các chuyên gia hàng đầu từ các cục nghiệp vụ Bộ Cong an và các trường đại học lớn nhằm thảo luận về các thách thức an ninh mạng và giải pháp đào tạo nguồn nhân lực chất lượng cao.')" class="mt-4 text-policeRed text-xs font-semibold hover:underline inline-flex items-center space-x-1">
+                            <span>Chi tiết thông báo</span>
+                            <i class="fas fa-arrow-right text-[10px]"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- News 3 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm border border-slate-200 flex flex-col">
+                    <div class="relative">
+                        <img src="https://placehold.co/600x250/b91c1c/ffffff?text=Hoat+dong+doan+thanh+nien" alt="Hoạt động đoàn thanh niên" class="w-full h-48 object-cover">
+                        <span class="absolute top-3 left-3 bg-yellow-600 text-white text-[10px] font-bold px-2.5 py-1 rounded uppercase">Hoạt Động</span>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <div class="text-xs text-slate-400 mb-2"><i class="far fa-calendar-alt mr-1"></i> 10/10/2026</div>
+                            <h4 class="font-bold text-policeDark text-base mb-2 leading-snug">Đoàn Thanh niên PPU tổ chức giải thể thao chào mừng ngày thành lập</h4>
+                            <p class="text-xs text-slate-500 line-clamp-2">Sôi nổi các trận đấu bóng đá, bóng chuyền và võ thuật giữa các trung đoàn học viên tại cơ sở trường.</p>
+                        </div>
+                        <button onclick="openModal('Giải thể thao Đoàn Thanh niên', 'Giải thể thao chào mừng năm học mới diễn ra trong không khí hào hứng, thắt chặt tình đoàn kết giữa các chi đoàn học viên, khẳng định tinh thần thể thao khỏe để bảo vệ Tổ quốc.')" class="mt-4 text-policeRed text-xs font-semibold hover:underline inline-flex items-center space-x-1">
+                            <span>Chi tiết thông báo</span>
+                            <i class="fas fa-arrow-right text-[10px]"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="lien-he" class="bg-policeDark text-slate-300 pt-16 pb-8 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+            <!-- Col 1 -->
+            <div class="space-y-4">
+                <div class="flex items-center space-x-3">
+                    <div class="w-10 h-10 bg-policeRed rounded-full flex items-center justify-center text-policeGold shadow-lg">
+                        <i class="fas fa-shield-alt text-lg"></i>
+                    </div>
+                    <div>
+                        <h2 class="text-sm font-bold text-white uppercase tracking-wider">ĐH Canh sat nhan dan</h2>
+                        <p class="text-[10px] text-policeRed font-semibold">PEOPLE'S POLICE UNIVERSITY</p>
+                    </div>
+                </div>
+                <p class="text-xs text-slate-400 leading-relaxed">
+                    Trường Đại học Canh sat nhan dan - Đơn vị anh hùng lực lượng vũ trang nhân dân, nôi đào tạo sĩ quan Canh sat chất lượng cao cho đất nước.
+                </p>
+                <div class="flex space-x-3 pt-2">
+                    <a href="#" class="w-8 h-8 rounded-full bg-slate-800 flex items-center justify-center text-slate-300 hover:bg-policeRed hover:text-white transition"><i class="fab fa-facebook-f text-xs"></i></a>
+                    <a href="#" class="w-8 h-8 rounded-full bg-slate-800 flex items-center justify-center text-slate-300 hover:bg-policeRed hover:text-white transition"><i class="fab fa-youtube text-xs"></i></a>
+                    <a href="#" class="w-8 h-8 rounded-full bg-slate-800 flex items-center justify-center text-slate-300 hover:bg-policeRed hover:text-white transition"><i class="fab fa-telegram text-xs"></i></a>
+                </div>
+            </div>
+
+            <!-- Col 2 -->
+            <div>
+                <h4 class="text-white font-bold text-sm uppercase tracking-wider mb-4 border-b border-slate-800 pb-2">Liên kết nhanh</h4>
+                <ul class="space-y-2 text-xs">
+                    <li><a href="#trang-chu" class="hover:text-policeGold transition"><i class="fas fa-angle-right mr-2 text-policeRed"></i> Trang chủ</a></li>
+                    <li><a href="#gioi-thieu" class="hover:text-policeGold transition"><i class="fas fa-angle-right mr-2 text-policeRed"></i> Giới thiệu lịch sử</a></li>
+                    <li><a href="#dao-tao" class="hover:text-policeGold transition"><i class="fas fa-angle-right mr-2 text-policeRed"></i> Chương trình đào tạo</a></li>
+                    <li><a href="#hoat-dong" class="hover:text-policeGold transition"><i class="fas fa-angle-right mr-2 text-policeRed"></i> Hoạt động sinh viên</a></li>
+                    <li><a href="#tin-tuc" class="hover:text-policeGold transition"><i class="fas fa-angle-right mr-2 text-policeRed"></i> Tin tức - Tuyển sinh</a></li>
+                </ul>
+            </div>
+
+            <!-- Col 3 -->
+            <div>
+                <h4 class="text-white font-bold text-sm uppercase tracking-wider mb-4 border-b border-slate-800 pb-2">Thông tin liên hệ</h4>
+                <ul class="space-y-3 text-xs">
+                    <li class="flex items-start space-x-3">
+                        <i class="fas fa-map-marker-alt text-policeGold mt-1"></i>
+                        <span>42 Nguyễn Hữu Phước - Phường An Lạc - Quận 1 - TP Hồ Chí Minh</span>
+                    </li>
+                    <li class="flex items-center space-x-3">
+                        <i class="fas fa-phone-alt text-policeGold"></i>
+                        <span>(028) 2846.3812 - (028) 346.3843</span>
+                    </li>
+                    <li class="flex items-center space-x-3">
+                        <i class="fas fa-envelope text-policeGold"></i>
+                        <span>contact@daihocsnd.npo.io.vn</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Col 4 -->
+            <div>
+                <h4 class="text-white font-bold text-sm uppercase tracking-wider mb-4 border-b border-slate-800 pb-2">Bản đồ chỉ đường</h4>
+                <div class="rounded-xl overflow-hidden bg-slate-800 border border-slate-700 h-32 flex items-center justify-center text-slate-400 text-xs">
+                    <div class="text-center p-2">
+                        <i class="fas fa-map-marked-alt text-2xl text-policeGold mb-1"></i>
+                        <p>CS1: Binh Thanh, TP.HCM</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-8 border-t border-slate-800 pt-6 flex flex-col sm:flex-row justify-between items-center text-xs text-slate-500">
+            <p>&copy; 2026 Trường Đại học Canh sat nhan dan. All rights reserved.</p>
+            <p class="mt-2 sm:mt-0">Thiết kế thân thiện với sinh viên.</p>
+        </div>
+    </footer>
+
+    <!-- Detail Modal -->
+    <div id="detail-modal" class="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
+        <div class="bg-white rounded-2xl max-w-lg w-full p-6 shadow-2xl relative transform transition-all animate-in">
+            <button onclick="closeModal()" class="absolute top-4 right-4 text-slate-400 hover:text-policeDark text-xl focus:outline-none">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="flex items-center space-x-3 mb-4">
+                <div class="w-10 h-10 bg-red-100 rounded-full flex items-center justify-center text-policeRed">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <h3 id="modal-title" class="text-lg font-bold text-policeDark">Tiêu đề chi tiết</h3>
+            </div>
+            <p id="modal-content" class="text-sm text-slate-600 leading-relaxed mb-6">
+                Nội dung chi tiết sẽ hiển thị ở đây...
+            </p>
+            <div class="flex justify-end">
+                <button onclick="closeModal()" class="bg-policeDark hover:bg-slate-800 text-white text-xs px-5 py-2.5 rounded-xl font-medium transition">
+                    Đóng cửa sổ
+                </button>
+            </div>
+        </div>
     </div>
-        
 
-    
-     </div><!---END .slider-->
-  
+    <!-- JavaScript Interactive Code -->
+    <script>
+        // Mobile Menu Toggle
+        const menuToggle = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
 
-    <div class=" clearfix">
-		<div class="wap_tintuc main_fix">
-	<div class="tieude_giua"><div>Tin tức</div></div>
-	<ul class="cap1">
-				<li><a class="active" href="1">Tin nổi bật</a></li>
-				<li><a class="" href="2">Giáo dục - Đào tạo</a></li>
-				<li><a class="" href="10">Nghiên cứu - Trao đổi</a></li>
-				<li><a class="" href="19">Khoa học Công nghệ</a></li>
-				<li><a class="" href="20">Các mặt công tác</a></li>
-				<li><a class="" href="67">Đào tạo sinh viên Quốc tế</a></li>
-				<li><a class="" href="51">Góc chia sẻ</a></li>
-			</ul>
-	<div class="tintuc">
-		<div class="wap_box_news2">
-		    		        <div class="box_news2">
-		            <p class="img chayvien">
-		                <i class="i_chayvien"></i><i class="i_chayvien"></i><i class="i_chayvien"></i><i class="i_chayvien"></i>
-		                <a href="hon-100-hoc-vien-nu-truong-dai-hoc-SND-tham-gia-dieu-binh-dieu-hanh-trong-le-ky-niem-80-nam-cach-mang-thang-tam-thanh-cong-va-quoc-khanh-nuoc-cong-hoa-xa-hoi-chu-nghia-viet-nam" title="Hơn 100 học viên nữ Trường Đại học SND tham gia diễu binh, diễu hành trong lễ Kỷ niệm 80 năm Cách  mạng tháng Tám thành công và Quốc khánh nước Cộng hòa xã hội chủ nghĩa Việt Nam"><img src="upload/news/z6599795823712_842994f16d2cc7af1b772495db9ce86e3211_380x250.jpg" alt="Hơn 100 học viên nữ Trường Đại học SND tham gia diễu binh, diễu hành trong lễ Kỷ niệm 80 năm Cách  mạng tháng Tám thành công và Quốc khánh nước Cộng hòa xã hội chủ nghĩa Việt Nam" onerror="this.src='images/380x250.png'" /></a>
-		            </p>      
-		            <h3><a href="hon-100-hoc-vien-nu-truong-dai-hoc-SND-tham-gia-dieu-binh-dieu-hanh-trong-le-ky-niem-80-nam-cach-mang-thang-tam-thanh-cong-va-quoc-khanh-nuoc-cong-hoa-xa-hoi-chu-nghia-viet-nam" title="Hơn 100 học viên nữ Trường Đại học SND tham gia diễu binh, diễu hành trong lễ Kỷ niệm 80 năm Cách  mạng tháng Tám thành công và Quốc khánh nước Cộng hòa xã hội chủ nghĩa Việt Nam">Hơn 100 học viên nữ Trường Đại học SND tham gia diễu binh, diễu hành trong lễ Kỷ niệm 80 năm Cách  mạng tháng Tám thành...</a><a href="dhcsadmin/index.php?com=news&act=edit&id_danhmuc=1&id_list=0&type=tin-tuc&id=8767" class="sua_admin" target="_blank" title="Sửa bài viết" rel="nofollow"><i class="fas fa-pencil-alt"></i></a></h3>
-		            <p class="ngaytao"><i class="fa fa-calendar" aria-hidden="true"></i>14.05.2026</p>
-		            <div class="mota">Ngày 15/5/2026, tại trụ sở Chính, Trường Đại học SND long trọng tổ chức lễ Xuất quân tham gia Khối diễu binh, diễu hành...</div>       
-		        </div><!---END .box_new--> 
-		    		        <div class="box_news2">
-		            <p class="img chayvien">
-		                <i class="i_chayvien"></i><i class="i_chayvien"></i><i class="i_chayvien"></i><i class="i_chayvien"></i>
-		                <a href="hoc-vien-nha-truong-quyet-tam-thuc-hien-thang-loi-dot-sinh-hoat-chinh-tri-dac-biet-ky-niem-80-nam-ngay-truyen-thong-cand-va-20-nam-ngay-hoi-toan-dan-bao-ve-antq" title="Học viên Nhà trường quyết tâm thực hiện thắng lợi đợt Sinh hoạt chính trị đặc biệt kỷ niệm 80 năm Ngày truyền thống CAND và 20 năm Ngày hội toàn dân bảo vệ ANTQ"><img src="upload/news/dhSND5842_380x250.jpg" alt="Học viên Nhà trường quyết tâm thực hiện thắng lợi đợt Sinh hoạt chính trị đặc biệt kỷ niệm 80 năm Ngày truyền thống CAND và 20 năm Ngày hội toàn dân bảo vệ ANTQ" onerror="this.src='images/380x250.png'" /></a>
-		            </p>      
-		            <h3><a href="hoc-vien-nha-truong-quyet-tam-thuc-hien-thang-loi-dot-sinh-hoat-chinh-tri-dac-biet-ky-niem-80-nam-ngay-truyen-thong-cand-va-20-nam-ngay-hoi-toan-dan-bao-ve-antq" title="Học viên Nhà trường quyết tâm thực hiện thắng lợi đợt Sinh hoạt chính trị đặc biệt kỷ niệm 80 năm Ngày truyền thống CAND và 20 năm Ngày hội toàn dân bảo vệ ANTQ">Học viên Nhà trường quyết tâm thực hiện thắng lợi đợt Sinh hoạt chính trị đặc biệt kỷ niệm 80 năm Ngày truyền thống...</a><a href="dhcsadmin/index.php?com=news&act=edit&id_danhmuc=1&id_list=0&type=tin-tuc&id=8758" class="sua_admin" target="_blank" title="Sửa bài viết" rel="nofollow"><i class="fas fa-pencil-alt"></i></a></h3>
-		            <p class="ngaytao"><i class="fa fa-calendar" aria-hidden="true"></i>12.05.2026</p>
-		            <div class="mota">Ngày 12/5/2026, Trường Đại học SND tổ chức Lễ phát động đợt sinh hoạt chính trị đặc biệt kỷ niệm 80 năm Ngày truyền...</div>       
-		        </div><!---END .box_new--> 
-		    		        <div class="box_news2">
-		            <p class="img chayvien">
-		                <i class="i_chayvien"></i><i class="i_chayvien"></i><i class="i_chayvien"></i><i class="i_chayvien"></i>
-		                <a href="chi-dao-dieu-hanh-noi-bat-cua-lanh-dao-bo-cong-an-trong-tuan-tu-ngay-045-1052026" title="Chỉ đạo điều hành nổi bật của lãnh đạo Bộ Công an trong tuần từ ngày 04/5 – 10/5/2026"><img src="upload/news/10-5-14239_380x250.png" alt="Chỉ đạo điều hành nổi bật của lãnh đạo Bộ Công an trong tuần từ ngày 04/5 – 10/5/2026" onerror="this.src='images/380x250.png'" /></a>
-		            </p>      
-		            <h3><a href="chi-dao-dieu-hanh-noi-bat-cua-lanh-dao-bo-cong-an-trong-tuan-tu-ngay-045-1052026" title="Chỉ đạo điều hành nổi bật của lãnh đạo Bộ Công an trong tuần từ ngày 04/5 – 10/5/2026">Chỉ đạo điều hành nổi bật của lãnh đạo Bộ Công an trong tuần từ ngày 04/5 – 10/5/2026</a><a href="dhcsadmin/index.php?com=news&act=edit&id_danhmuc=1&id_list=0&type=tin-tuc&id=8753" class="sua_admin" target="_blank" title="Sửa bài viết" rel="nofollow"><i class="fas fa-pencil-alt"></i></a></h3>
-		            <p class="ngaytao"><i class="fa fa-calendar" aria-hidden="true"></i>10.05.2026</p>
-		            <div class="mota">Các đơn vị được giao chủ trì xây dựng luật cần chuẩn bị hết sức kỹ càng, chặt chẽ về quy trình, quy định, nội...</div>       
-		        </div><!---END .box_new--> 
-		    		        <div class="box_news2">
-		            <p class="img chayvien">
-		                <i class="i_chayvien"></i><i class="i_chayvien"></i><i class="i_chayvien"></i><i class="i_chayvien"></i>
-		                <a href="hoi-thao-khoa-hoc-phong-chong-toi-pham-su-dung-cong-nghe-cao-chiem-doat-tai-san" title="Hội thảo khoa học “Phòng, chống tội phạm sử dụng công nghệ cao chiếm đoạt tài sản”"><img src="upload/news/z6580013730915_0b2b0d3ceab56a8999ea1a602846858b9171_380x250.jpg" alt="Hội thảo khoa học “Phòng, chống tội phạm sử dụng công nghệ cao chiếm đoạt tài sản”" onerror="this.src='images/380x250.png'" /></a>
-		            </p>      
-		            <h3><a href="hoi-thao-khoa-hoc-phong-chong-toi-pham-su-dung-cong-nghe-cao-chiem-doat-tai-san" title="Hội thảo khoa học “Phòng, chống tội phạm sử dụng công nghệ cao chiếm đoạt tài sản”">Hội thảo khoa học “Phòng, chống tội phạm sử dụng công nghệ cao chiếm đoạt tài sản”</a><a href="dhcsadmin/index.php?com=news&act=edit&id_danhmuc=1&id_list=0&type=tin-tuc&id=8748" class="sua_admin" target="_blank" title="Sửa bài viết" rel="nofollow"><i class="fas fa-pencil-alt"></i></a></h3>
-		            <p class="ngaytao"><i class="fa fa-calendar" aria-hidden="true"></i>08.05.2026</p>
-		            <div class="mota">Ngày 8/5/2026, tại trụ sở Chính, Trường Đại học SND tổ chức Hội thảo khoa học “Phòng, chống tội phạm sử dụng công...</div>       
-		        </div><!---END .box_new--> 
-		    		        <div class="box_news2">
-		            <p class="img chayvien">
-		                <i class="i_chayvien"></i><i class="i_chayvien"></i><i class="i_chayvien"></i><i class="i_chayvien"></i>
-		                <a href="hoi-nghi-tuyen-truyen-cac-luat-da-duoc-quoc-hoi-khoa-xv-tai-ky-hop-thu-8-thong-qua" title="Hội nghị tuyên truyền các Luật đã được Quốc hội khoá XV tại Kỳ họp thứ 8 thông qua"><img src="upload/news/z6580941108261_6fcce14314ca795c1d2924a8c6046fc29212_380x250.jpg" alt="Hội nghị tuyên truyền các Luật đã được Quốc hội khoá XV tại Kỳ họp thứ 8 thông qua" onerror="this.src='images/380x250.png'" /></a>
-		            </p>      
-		            <h3><a href="hoi-nghi-tuyen-truyen-cac-luat-da-duoc-quoc-hoi-khoa-xv-tai-ky-hop-thu-8-thong-qua" title="Hội nghị tuyên truyền các Luật đã được Quốc hội khoá XV tại Kỳ họp thứ 8 thông qua">Hội nghị tuyên truyền các Luật đã được Quốc hội khoá XV tại Kỳ họp thứ 8 thông qua</a><a href="dhcsadmin/index.php?com=news&act=edit&id_danhmuc=1&id_list=0&type=tin-tuc&id=8747" class="sua_admin" target="_blank" title="Sửa bài viết" rel="nofollow"><i class="fas fa-pencil-alt"></i></a></h3>
-		            <p class="ngaytao"><i class="fa fa-calendar" aria-hidden="true"></i>08.05.2026</p>
-		            <div class="mota">Ngày 08/5/2026, tại Trụ sở chính, Trường Đại học SND tổ chức Hội nghị tuyên truyền các Luật Phòng, chống mua bán người,...</div>       
-		        </div><!---END .box_new--> 
-		    		        <div class="box_news2">
-		            <p class="img chayvien">
-		                <i class="i_chayvien"></i><i class="i_chayvien"></i><i class="i_chayvien"></i><i class="i_chayvien"></i>
-		                <a href="hoi-nghi-chuyen-de-hoc-tap-va-lam-theo-tu-tuong-dao-duc-phong-cach-ho-chi-minh" title="Hội nghị chuyên đề học tập và làm theo tư tưởng, đạo đức, phong cách Hồ Chí Minh"><img src="upload/news/z6575916577935_ae48cdf7c39e7eebd67e97b560eefd8a4847_380x250.jpg" alt="Hội nghị chuyên đề học tập và làm theo tư tưởng, đạo đức, phong cách Hồ Chí Minh" onerror="this.src='images/380x250.png'" /></a>
-		            </p>      
-		            <h3><a href="hoi-nghi-chuyen-de-hoc-tap-va-lam-theo-tu-tuong-dao-duc-phong-cach-ho-chi-minh" title="Hội nghị chuyên đề học tập và làm theo tư tưởng, đạo đức, phong cách Hồ Chí Minh">Hội nghị chuyên đề học tập và làm theo tư tưởng, đạo đức, phong cách Hồ Chí Minh</a><a href="dhcsadmin/index.php?com=news&act=edit&id_danhmuc=1&id_list=0&type=tin-tuc&id=8743" class="sua_admin" target="_blank" title="Sửa bài viết" rel="nofollow"><i class="fas fa-pencil-alt"></i></a></h3>
-		            <p class="ngaytao"><i class="fa fa-calendar" aria-hidden="true"></i>07.05.2026</p>
-		            <div class="mota">Ngày 7/5, Bộ Công an tổ chức Hội nghị chuyên đề học tập và làm theo tư tưởng, đạo đức, phong cách Hồ Chí Minh năm...</div>       
-		        </div><!---END .box_new--> 
-		    		    		</div>
-		<p class="xemthem"><a href="tin-noi-bat">Xem thêm</a></p>
-	</div>
-</div>
+        menuToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
 
+        // Close mobile menu when clicking a link
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
 
-<div class="wap_sukien">
-<div class="tieude_giua"><div>Hoạt động nổi bật</div></div>
-<div class="main_fix">
-		<div class="sukien">
-				<div class="tin1">
-			<div class="img">
-				<a href="cong-bo-nguong-bao-dam-chat-luong-dau-vao-nam-hoc-2026--2026-tai-truong-dai-hoc-canh-sat-nhan-dan" title="Công bố ngưỡng bảo đảm chất lượng đầu vào năm học 2026 - 2026 tại Trường Đại học CANH SAT NHAN DAN"><img src="upload/news/tb4214_380x250.png" alt="Công bố ngưỡng bảo đảm chất lượng đầu vào năm học 2026 - 2026 tại Trường Đại học CANH SAT NHAN DAN" onerror="this.src='images/380x250.png'" /></a>
-				<div class="mota">
-					<h3><a href="cong-bo-nguong-bao-dam-chat-luong-dau-vao-nam-hoc-2026--2026-tai-truong-dai-hoc-canh-sat-nhan-dan" title="Công bố ngưỡng bảo đảm chất lượng đầu vào năm học 2026 - 2026 tại Trường Đại học CANH SAT NHAN DAN">Công bố ngưỡng bảo đảm chất lượng đầu vào năm học 2026 - 2026...</a><a href="dhcsadmin/index.php?com=news&act=edit&id_danhmuc=50&id_list=0&type=su-kien&id=8764" class="sua_admin" target="_blank" title="Sửa bài viết" rel="nofollow"><i class="fas fa-pencil-alt"></i></a></h3>
-					<p class="ngaytao"><i class="fa fa-calendar" aria-hidden="true"></i>14.05.2026</p>
-				</div>
-			</div>
-		</div>
-		
-			<div class="chay_sukien">
-																	<div class="item_sk">
-						<p class="img"><a href="thong-bao-to-chuc-on-thi-cho-thi-sinh-du-thi-van-bang-hai-chinh-quy-tuyen-moi-nam-2026" title="Thông báo tổ chức ôn thi cho thí sinh dự thi văn bằng hai chính quy tuyển mới năm 2026"><img class="no_lazy" src="upload/news/tb19217_380x250.jpg" alt="Thông báo tổ chức ôn thi cho thí sinh dự thi văn bằng hai chính quy tuyển mới năm 2026" onerror="this.src='images/380x250.png'" /></a></p>      
-			            <h3><a href="thong-bao-to-chuc-on-thi-cho-thi-sinh-du-thi-van-bang-hai-chinh-quy-tuyen-moi-nam-2026" title="Thông báo tổ chức ôn thi cho thí sinh dự thi văn bằng hai chính quy tuyển mới năm 2026">Thông báo tổ chức ôn thi cho thí sinh dự thi văn bằng hai chính quy tuyển mới năm 2026</a><a href="dhcsadmin/index.php?com=news&act=edit&id_danhmuc=50&id_list=0&type=su-kien&id=8746" class="sua_admin" target="_blank" title="Sửa bài viết" rel="nofollow"><i class="fas fa-pencil-alt"></i></a></h3>
-			            <p class="ngaytao"><i class="fa fa-calendar" aria-hidden="true"></i>08.05.2026</p>
-					</div>
-													<div class="item_sk">
-						<p class="img"><a href="thong-bao-thoi-gian-to-chuc-bao-ve-luan-an-tien-si-luat-cua-nghien-cuu-sinh-nguyen-van-dung" title="Thông báo thời gian tổ chức bảo vệ Luận án Tiến sĩ Luật của Nghiên cứu sinh Nguyễn Văn Dũng"><img class="no_lazy" src="upload/news/loa-thong-bao5552_380x250.jpg" alt="Thông báo thời gian tổ chức bảo vệ Luận án Tiến sĩ Luật của Nghiên cứu sinh Nguyễn Văn Dũng" onerror="this.src='images/380x250.png'" /></a></p>      
-			            <h3><a href="thong-bao-thoi-gian-to-chuc-bao-ve-luan-an-tien-si-luat-cua-nghien-cuu-sinh-nguyen-van-dung" title="Thông báo thời gian tổ chức bảo vệ Luận án Tiến sĩ Luật của Nghiên cứu sinh Nguyễn Văn Dũng">Thông báo thời gian tổ chức bảo vệ Luận án Tiến sĩ Luật của Nghiên cứu sinh Nguyễn Văn Dũng</a><a href="dhcsadmin/index.php?com=news&act=edit&id_danhmuc=50&id_list=0&type=su-kien&id=8738" class="sua_admin" target="_blank" title="Sửa bài viết" rel="nofollow"><i class="fas fa-pencil-alt"></i></a></h3>
-			            <p class="ngaytao"><i class="fa fa-calendar" aria-hidden="true"></i>06.05.2026</p>
-					</div>
-													<div class="item_sk">
-						<p class="img"><a href="danh-sach-ung-vien-tham-gia-hoi-dong-giao-su-co-so-truong-dai-hoc-SND-nam-2026" title="Danh sách ứng viên tham gia Hội đồng giáo sư cơ sở Trường Đại học SND năm 2026"><img class="no_lazy" src="upload/news/tb7283_380x250.jpg" alt="Danh sách ứng viên tham gia Hội đồng giáo sư cơ sở Trường Đại học SND năm 2026" onerror="this.src='images/380x250.png'" /></a></p>      
-			            <h3><a href="danh-sach-ung-vien-tham-gia-hoi-dong-giao-su-co-so-truong-dai-hoc-SND-nam-2026" title="Danh sách ứng viên tham gia Hội đồng giáo sư cơ sở Trường Đại học SND năm 2026">Danh sách ứng viên tham gia Hội đồng giáo sư cơ sở Trường Đại học SND năm 2026</a><a href="dhcsadmin/index.php?com=news&act=edit&id_danhmuc=50&id_list=0&type=su-kien&id=8733" class="sua_admin" target="_blank" title="Sửa bài viết" rel="nofollow"><i class="fas fa-pencil-alt"></i></a></h3>
-			            <p class="ngaytao"><i class="fa fa-calendar" aria-hidden="true"></i>05.05.2026</p>
-					</div>
-													<div class="item_sk">
-						<p class="img"><a href="thong-bao-thoi-gian-to-chuc-bao-ve-luan-an-tien-si-luat-cua-nghien-cuu-sinh-nguyen-thanh-binh" title="Thông báo thời gian tổ chức bảo vệ Luận án Tiến sĩ Luật của Nghiên cứu sinh Nguyễn Thanh Bình"><img class="no_lazy" src="upload/news/23-48120_380x250.png" alt="Thông báo thời gian tổ chức bảo vệ Luận án Tiến sĩ Luật của Nghiên cứu sinh Nguyễn Thanh Bình" onerror="this.src='images/380x250.png'" /></a></p>      
-			            <h3><a href="thong-bao-thoi-gian-to-chuc-bao-ve-luan-an-tien-si-luat-cua-nghien-cuu-sinh-nguyen-thanh-binh" title="Thông báo thời gian tổ chức bảo vệ Luận án Tiến sĩ Luật của Nghiên cứu sinh Nguyễn Thanh Bình">Thông báo thời gian tổ chức bảo vệ Luận án Tiến sĩ Luật của Nghiên cứu sinh Nguyễn Thanh Bình</a><a href="dhcsadmin/index.php?com=news&act=edit&id_danhmuc=50&id_list=0&type=su-kien&id=8675" class="sua_admin" target="_blank" title="Sửa bài viết" rel="nofollow"><i class="fas fa-pencil-alt"></i></a></h3>
-			            <p class="ngaytao"><i class="fa fa-calendar" aria-hidden="true"></i>23.04.2026</p>
-					</div>
-													<div class="item_sk">
-						<p class="img"><a href="thong-tin-tuyen-sinh-nam-2026-hinh-thuc-dao-tao-chinh-quy-tuyen-moi" title=" THÔNG TIN TUYỂN SINH NĂM 2026  (Hình thức đào tạo: Chính quy tuyển mới)"><img class="no_lazy" src="upload/news/tb8371_380x250.jpg" alt=" THÔNG TIN TUYỂN SINH NĂM 2026  (Hình thức đào tạo: Chính quy tuyển mới)" onerror="this.src='images/380x250.png'" /></a></p>      
-			            <h3><a href="thong-tin-tuyen-sinh-nam-2026-hinh-thuc-dao-tao-chinh-quy-tuyen-moi" title=" THÔNG TIN TUYỂN SINH NĂM 2026  (Hình thức đào tạo: Chính quy tuyển mới)"> THÔNG TIN TUYỂN SINH NĂM 2026  (Hình thức đào tạo: Chính quy tuyển mới)</a><a href="dhcsadmin/index.php?com=news&act=edit&id_danhmuc=50&id_list=0&type=su-kien&id=8623" class="sua_admin" target="_blank" title="Sửa bài viết" rel="nofollow"><i class="fas fa-pencil-alt"></i></a></h3>
-			            <p class="ngaytao"><i class="fa fa-calendar" aria-hidden="true"></i>14.04.2026</p>
-					</div>
-													<div class="item_sk">
-						<p class="img"><a href="thong-bao-tuyen-sinh-van-bang-2-chinh-quy-tuyen-moi-nam-2026" title="Thông báo tuyển sinh văn bằng 2 chính quy tuyển mới năm 2026"><img class="no_lazy" src="upload/news/tb29621_380x250.jpg" alt="Thông báo tuyển sinh văn bằng 2 chính quy tuyển mới năm 2026" onerror="this.src='images/380x250.png'" /></a></p>      
-			            <h3><a href="thong-bao-tuyen-sinh-van-bang-2-chinh-quy-tuyen-moi-nam-2026" title="Thông báo tuyển sinh văn bằng 2 chính quy tuyển mới năm 2026">Thông báo tuyển sinh văn bằng 2 chính quy tuyển mới năm 2026</a><a href="dhcsadmin/index.php?com=news&act=edit&id_danhmuc=50&id_list=0&type=su-kien&id=8567" class="sua_admin" target="_blank" title="Sửa bài viết" rel="nofollow"><i class="fas fa-pencil-alt"></i></a></h3>
-			            <p class="ngaytao"><i class="fa fa-calendar" aria-hidden="true"></i>03.04.2026</p>
-					</div>
-													<div class="item_sk">
-						<p class="img"><a href="thong-bao-tuyen-sinh-dai-hoc-chinh-quy-tuyen-moi-doi-voi-nguoi-da-tot-nghiep-thpt-hoac-tuong-duong-nam-2026" title="Thông báo tuyển sinh đại học chính quy tuyển mới đối với người đã tốt nghiệp THPT hoặc tương đương năm 2026"><img class="no_lazy" src="upload/news/tb0309_380x250.png" alt="Thông báo tuyển sinh đại học chính quy tuyển mới đối với người đã tốt nghiệp THPT hoặc tương đương năm 2026" onerror="this.src='images/380x250.png'" /></a></p>      
-			            <h3><a href="thong-bao-tuyen-sinh-dai-hoc-chinh-quy-tuyen-moi-doi-voi-nguoi-da-tot-nghiep-thpt-hoac-tuong-duong-nam-2026" title="Thông báo tuyển sinh đại học chính quy tuyển mới đối với người đã tốt nghiệp THPT hoặc tương đương năm 2026">Thông báo tuyển sinh đại học chính quy tuyển mới đối với người đã tốt nghiệp THPT hoặc tương đương năm 2026</a><a href="dhcsadmin/index.php?com=news&act=edit&id_danhmuc=50&id_list=0&type=su-kien&id=8566" class="sua_admin" target="_blank" title="Sửa bài viết" rel="nofollow"><i class="fas fa-pencil-alt"></i></a></h3>
-			            <p class="ngaytao"><i class="fa fa-calendar" aria-hidden="true"></i>03.04.2026</p>
-					</div>
-													<div class="item_sk">
-						<p class="img"><a href="diem-trung-tuyen-tuyen-sinh-dao-tao-trinh-do-thac-si-trinh-do-dai-hoc-vua-lam-vua-hoc-mo-tai-t05-nam-hoc-2024-2026-tuyen-sinh-bo-sung" title="Điểm trúng tuyển tuyển sinh đào tạo trình độ thạc sĩ, trình độ đại học  vừa làm vừa học mở tại T05, năm học 2024 – 2026 (tuyển sinh bổ sung)"><img class="no_lazy" src="upload/news/thongbao6860_380x250.png" alt="Điểm trúng tuyển tuyển sinh đào tạo trình độ thạc sĩ, trình độ đại học  vừa làm vừa học mở tại T05, năm học 2024 – 2026 (tuyển sinh bổ sung)" onerror="this.src='images/380x250.png'" /></a></p>      
-			            <h3><a href="diem-trung-tuyen-tuyen-sinh-dao-tao-trinh-do-thac-si-trinh-do-dai-hoc-vua-lam-vua-hoc-mo-tai-t05-nam-hoc-2024-2026-tuyen-sinh-bo-sung" title="Điểm trúng tuyển tuyển sinh đào tạo trình độ thạc sĩ, trình độ đại học  vừa làm vừa học mở tại T05, năm học 2024 – 2026 (tuyển sinh bổ sung)">Điểm trúng tuyển tuyển sinh đào tạo trình độ thạc sĩ, trình độ đại học  vừa làm vừa học mở tại T05, năm học 2024 – 2026 (tuyển sinh bổ sung)</a><a href="dhcsadmin/index.php?com=news&act=edit&id_danhmuc=50&id_list=0&type=su-kien&id=8311" class="sua_admin" target="_blank" title="Sửa bài viết" rel="nofollow"><i class="fas fa-pencil-alt"></i></a></h3>
-			            <p class="ngaytao"><i class="fa fa-calendar" aria-hidden="true"></i>23.01.2026</p>
-					</div>
-													<div class="item_sk">
-						<p class="img"><a href="cong-bo-diem-va-tiep-nhan-don-phuc-khao-bai-luan-bai-kiem-tra-danh-gia-tuyen-sinh-dao-tao-trinh-do-thac-si-tuyen-sinh-dao-tao-trinh-do-dai-hoc-vlvh-nam-hoc-2024--2026-tuyen-sinh-bo-sung" title="Công bố điểm và tiếp nhận đơn phúc khảo bài luận, bài kiểm tra đánh giá tuyển sinh đào tạo trình độ thạc sĩ; tuyển sinh đào tạo trình độ đại học VLVH năm học 2024 - 2026 (tuyển sinh bổ sung)"><img class="no_lazy" src="upload/news/a3a32047f4263f246ad9385d4ffffa9btb-diem-thi7251_380x250.jpg" alt="Công bố điểm và tiếp nhận đơn phúc khảo bài luận, bài kiểm tra đánh giá tuyển sinh đào tạo trình độ thạc sĩ; tuyển sinh đào tạo trình độ đại học VLVH năm học 2024 - 2026 (tuyển sinh bổ sung)" onerror="this.src='images/380x250.png'" /></a></p>      
-			            <h3><a href="cong-bo-diem-va-tiep-nhan-don-phuc-khao-bai-luan-bai-kiem-tra-danh-gia-tuyen-sinh-dao-tao-trinh-do-thac-si-tuyen-sinh-dao-tao-trinh-do-dai-hoc-vlvh-nam-hoc-2024--2026-tuyen-sinh-bo-sung" title="Công bố điểm và tiếp nhận đơn phúc khảo bài luận, bài kiểm tra đánh giá tuyển sinh đào tạo trình độ thạc sĩ; tuyển sinh đào tạo trình độ đại học VLVH năm học 2024 - 2026 (tuyển sinh bổ sung)">Công bố điểm và tiếp nhận đơn phúc khảo bài luận, bài kiểm tra đánh giá tuyển sinh đào tạo trình độ thạc sĩ; tuyển sinh đào tạo trình độ đại học VLVH năm học 2024 - 2026 (tuyển sinh bổ sung)</a><a href="dhcsadmin/index.php?com=news&act=edit&id_danhmuc=50&id_list=0&type=su-kien&id=8291" class="sua_admin" target="_blank" title="Sửa bài viết" rel="nofollow"><i class="fas fa-pencil-alt"></i></a></h3>
-			            <p class="ngaytao"><i class="fa fa-calendar" aria-hidden="true"></i>16.01.2026</p>
-					</div>
-							</div>
+        // Modal Functionality
+        const modal = document.getElementById('detail-modal');
+        const modalTitle = document.getElementById('modal-title');
+        const modalContent = document.getElementById('modal-content');
 
-	</div>
-		<div class="sukien">
-				<div class="tin1">
-			<div class="img">
-				<a href="so-ket-quy-che-phoi-hop-giua-truong-dh-SND-voi-cong-an-cac-tinh-duyen-hai-mien-trung-giai-doan-2022--2024" title="Sơ kết Quy chế phối hợp giữa Trường ĐH SND với Công an các tỉnh duyên hải miền Trung, giai đoạn 2022 - 2024"><img src="upload/news/qcph7003_380x250.jpg" alt="Sơ kết Quy chế phối hợp giữa Trường ĐH SND với Công an các tỉnh duyên hải miền Trung, giai đoạn 2022 - 2024" onerror="this.src='images/380x250.png'" /></a>
-				<div class="mota">
-					<h3><a href="so-ket-quy-che-phoi-hop-giua-truong-dh-SND-voi-cong-an-cac-tinh-duyen-hai-mien-trung-giai-doan-2022--2024" title="Sơ kết Quy chế phối hợp giữa Trường ĐH SND với Công an các tỉnh duyên hải miền Trung, giai đoạn 2022 - 2024">Sơ kết Quy chế phối hợp giữa Trường ĐH SND với Công an các tỉnh...</a><a href="dhcsadmin/index.php?com=news&act=edit&id_danhmuc=61&id_list=0&type=su-kien&id=8028" class="sua_admin" target="_blank" title="Sửa bài viết" rel="nofollow"><i class="fas fa-pencil-alt"></i></a></h3>
-					<p class="ngaytao"><i class="fa fa-calendar" aria-hidden="true"></i>22.11.2024</p>
-				</div>
-			</div>
-		</div>
-		
-			<div class="chay_sukien">
-																	<div class="item_sk">
-						<p class="img"><a href="le-ky-niem-42-nam-ngay-nha-giao-viet-nam-20111982--20112024" title="Lễ kỷ niệm 42 năm ngày Nhà giáo Việt Nam (20/11/1982 - 20/11/2024)"><img class="no_lazy" src="upload/news/z5279936030963_e4fa2b66126996139640c37adfdf68d57947_380x250.jpg" alt="Lễ kỷ niệm 42 năm ngày Nhà giáo Việt Nam (20/11/1982 - 20/11/2024)" onerror="this.src='images/380x250.png'" /></a></p>      
-			            <h3><a href="le-ky-niem-42-nam-ngay-nha-giao-viet-nam-20111982--20112024" title="Lễ kỷ niệm 42 năm ngày Nhà giáo Việt Nam (20/11/1982 - 20/11/2024)">Lễ kỷ niệm 42 năm ngày Nhà giáo Việt Nam (20/11/1982 - 20/11/2024)</a><a href="dhcsadmin/index.php?com=news&act=edit&id_danhmuc=61&id_list=0&type=su-kien&id=8020" class="sua_admin" target="_blank" title="Sửa bài viết" rel="nofollow"><i class="fas fa-pencil-alt"></i></a></h3>
-			            <p class="ngaytao"><i class="fa fa-calendar" aria-hidden="true"></i>21.11.2024</p>
-					</div>
-													<div class="item_sk">
-						<p class="img"><a href="video-khai-mac-hoi-thi-dieu-lenh-quan-su-vo-thuat-cand-lan-i" title="Video Khai mạc Hội thi điều lệnh, quân sự, võ thuật CAND lần I"><img class="no_lazy" src="upload/news/gda8596_380x250.jpg" alt="Video Khai mạc Hội thi điều lệnh, quân sự, võ thuật CAND lần I" onerror="this.src='images/380x250.png'" /></a></p>      
-			            <h3><a href="video-khai-mac-hoi-thi-dieu-lenh-quan-su-vo-thuat-cand-lan-i" title="Video Khai mạc Hội thi điều lệnh, quân sự, võ thuật CAND lần I">Video Khai mạc Hội thi điều lệnh, quân sự, võ thuật CAND lần I</a><a href="dhcsadmin/index.php?com=news&act=edit&id_danhmuc=61&id_list=0&type=su-kien&id=7100" class="sua_admin" target="_blank" title="Sửa bài viết" rel="nofollow"><i class="fas fa-pencil-alt"></i></a></h3>
-			            <p class="ngaytao"><i class="fa fa-calendar" aria-hidden="true"></i>23.03.2024</p>
-					</div>
-													<div class="item_sk">
-						<p class="img"><a href="truong-dai-hoc-SND-tuyen-sinh-van-bang-2-chinh-quy-tuyen-moi" title="Trường Đại học SND tuyển sinh văn bằng 2 chính quy tuyển mới"><img class="no_lazy" src="upload/news/tuyensinh5014_380x250.jpg" alt="Trường Đại học SND tuyển sinh văn bằng 2 chính quy tuyển mới" onerror="this.src='images/380x250.png'" /></a></p>      
-			            <h3><a href="truong-dai-hoc-SND-tuyen-sinh-van-bang-2-chinh-quy-tuyen-moi" title="Trường Đại học SND tuyển sinh văn bằng 2 chính quy tuyển mới">Trường Đại học SND tuyển sinh văn bằng 2 chính quy tuyển mới</a><a href="dhcsadmin/index.php?com=news&act=edit&id_danhmuc=61&id_list=0&type=su-kien&id=5410" class="sua_admin" target="_blank" title="Sửa bài viết" rel="nofollow"><i class="fas fa-pencil-alt"></i></a></h3>
-			            <p class="ngaytao"><i class="fa fa-calendar" aria-hidden="true"></i>04.10.2022</p>
-					</div>
-													<div class="item_sk">
-						<p class="img"><a href="nhung-chien-si-ao-trang-giua-long-ao-xanh" title="Những chiến sĩ Áo Trắng giữa lòng Áo Xanh"><img class="no_lazy" src="upload/news/12990_380x250.jpg" alt="Những chiến sĩ Áo Trắng giữa lòng Áo Xanh" onerror="this.src='images/380x250.png'" /></a></p>      
-			            <h3><a href="nhung-chien-si-ao-trang-giua-long-ao-xanh" title="Những chiến sĩ Áo Trắng giữa lòng Áo Xanh">Những chiến sĩ Áo Trắng giữa lòng Áo Xanh</a><a href="dhcsadmin/index.php?com=news&act=edit&id_danhmuc=61&id_list=0&type=su-kien&id=4828" class="sua_admin" target="_blank" title="Sửa bài viết" rel="nofollow"><i class="fas fa-pencil-alt"></i></a></h3>
-			            <p class="ngaytao"><i class="fa fa-calendar" aria-hidden="true"></i>27.02.2022</p>
-					</div>
-													<div class="item_sk">
-						<p class="img"><a href="tri-an-gia-dinh-cac-liet-sy-xa-thanh-binh--cho-gao--tien-giang" title=" Tri ân gia đình các liệt sỹ xã Thanh Bình - Chợ Gạo - Tiền Giang"><img class="no_lazy" src="upload/news/210692673_380x250.jpg" alt=" Tri ân gia đình các liệt sỹ xã Thanh Bình - Chợ Gạo - Tiền Giang" onerror="this.src='images/380x250.png'" /></a></p>      
-			            <h3><a href="tri-an-gia-dinh-cac-liet-sy-xa-thanh-binh--cho-gao--tien-giang" title=" Tri ân gia đình các liệt sỹ xã Thanh Bình - Chợ Gạo - Tiền Giang"> Tri ân gia đình các liệt sỹ xã Thanh Bình - Chợ Gạo - Tiền Giang</a><a href="dhcsadmin/index.php?com=news&act=edit&id_danhmuc=61&id_list=0&type=su-kien&id=4726" class="sua_admin" target="_blank" title="Sửa bài viết" rel="nofollow"><i class="fas fa-pencil-alt"></i></a></h3>
-			            <p class="ngaytao"><i class="fa fa-calendar" aria-hidden="true"></i>29.12.2021</p>
-					</div>
-													<div class="item_sk">
-						<p class="img"><a href="viet-nam-chien-thang-dai-dich-covid-19" title="Việt Nam chiến thắng đại dịch Covid-19"><img class="no_lazy" src="upload/news/niem-tin-chien-thang7609_380x250.png" alt="Việt Nam chiến thắng đại dịch Covid-19" onerror="this.src='images/380x250.png'" /></a></p>      
-			            <h3><a href="viet-nam-chien-thang-dai-dich-covid-19" title="Việt Nam chiến thắng đại dịch Covid-19">Việt Nam chiến thắng đại dịch Covid-19</a><a href="dhcsadmin/index.php?com=news&act=edit&id_danhmuc=61&id_list=0&type=su-kien&id=4705" class="sua_admin" target="_blank" title="Sửa bài viết" rel="nofollow"><i class="fas fa-pencil-alt"></i></a></h3>
-			            <p class="ngaytao"><i class="fa fa-calendar" aria-hidden="true"></i>23.12.2021</p>
-					</div>
-													<div class="item_sk">
-						<p class="img"><a href="kien-cuong-mau-ao-xanh" title="Kiên cường màu áo xanh"><img class="no_lazy" src="upload/news/19762_380x250.png" alt="Kiên cường màu áo xanh" onerror="this.src='images/380x250.png'" /></a></p>      
-			            <h3><a href="kien-cuong-mau-ao-xanh" title="Kiên cường màu áo xanh">Kiên cường màu áo xanh</a><a href="dhcsadmin/index.php?com=news&act=edit&id_danhmuc=61&id_list=0&type=su-kien&id=4704" class="sua_admin" target="_blank" title="Sửa bài viết" rel="nofollow"><i class="fas fa-pencil-alt"></i></a></h3>
-			            <p class="ngaytao"><i class="fa fa-calendar" aria-hidden="true"></i>23.12.2021</p>
-					</div>
-													<div class="item_sk">
-						<p class="img"><a href="sac-hoa-hoi-vien-nu-truong-dai-hoc-SND" title="Sắc hoa hội viên nữ Trường Đại học SND"><img class="no_lazy" src="upload/news/q7_380x2505355_380x250.jpg" alt="Sắc hoa hội viên nữ Trường Đại học SND" onerror="this.src='images/380x250.png'" /></a></p>      
-			            <h3><a href="sac-hoa-hoi-vien-nu-truong-dai-hoc-SND" title="Sắc hoa hội viên nữ Trường Đại học SND">Sắc hoa hội viên nữ Trường Đại học SND</a><a href="dhcsadmin/index.php?com=news&act=edit&id_danhmuc=61&id_list=0&type=su-kien&id=4490" class="sua_admin" target="_blank" title="Sửa bài viết" rel="nofollow"><i class="fas fa-pencil-alt"></i></a></h3>
-			            <p class="ngaytao"><i class="fa fa-calendar" aria-hidden="true"></i>27.10.2021</p>
-					</div>
-													<div class="item_sk">
-						<p class="img"><a href="phong-su-dac-biet" title="Phóng sự đặc biệt "><img class="no_lazy" src="upload/news/q7_380x2500216_380x250.jpg" alt="Phóng sự đặc biệt " onerror="this.src='images/380x250.png'" /></a></p>      
-			            <h3><a href="phong-su-dac-biet" title="Phóng sự đặc biệt ">Phóng sự đặc biệt </a><a href="dhcsadmin/index.php?com=news&act=edit&id_danhmuc=61&id_list=0&type=su-kien&id=4386" class="sua_admin" target="_blank" title="Sửa bài viết" rel="nofollow"><i class="fas fa-pencil-alt"></i></a></h3>
-			            <p class="ngaytao"><i class="fa fa-calendar" aria-hidden="true"></i>16.09.2021</p>
-					</div>
-							</div>
+        function openModal(title, content) {
+            modalTitle.textContent = title;
+            modalContent.textContent = content;
+            modal.classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        }
 
-	</div>
-		<div class="sukien">
-				<div class="tin1">
-			<div class="img">
-				<a href="bo-tranh-thiet-ke-infographic-chao-mung-ky-niem-45-nam-ngay-truyen-thong" title="Bộ tranh thiết kế infographic chào mừng kỷ niệm 45 năm ngày truyền thống"><img src="upload/news/bgh8543_380x250.jpg" alt="Bộ tranh thiết kế infographic chào mừng kỷ niệm 45 năm ngày truyền thống" onerror="this.src='images/380x250.png'" /></a>
-				<div class="mota">
-					<h3><a href="bo-tranh-thiet-ke-infographic-chao-mung-ky-niem-45-nam-ngay-truyen-thong" title="Bộ tranh thiết kế infographic chào mừng kỷ niệm 45 năm ngày truyền thống">Bộ tranh thiết kế infographic chào mừng kỷ niệm 45 năm ngày truyền...</a><a href="dhcsadmin/index.php?com=news&act=edit&id_danhmuc=47&id_list=0&type=su-kien&id=3993" class="sua_admin" target="_blank" title="Sửa bài viết" rel="nofollow"><i class="fas fa-pencil-alt"></i></a></h3>
-					<p class="ngaytao"><i class="fa fa-calendar" aria-hidden="true"></i>23.04.2021</p>
-				</div>
-			</div>
-		</div>
-		
-			<div class="chay_sukien">
-																	<div class="item_sk">
-						<p class="img"><a href="sach-va-nguoi-thay" title="Sách và Người thầy"><img class="no_lazy" src="upload/news/22-4-57305_380x2508233_380x250.jpg" alt="Sách và Người thầy" onerror="this.src='images/380x250.png'" /></a></p>      
-			            <h3><a href="sach-va-nguoi-thay" title="Sách và Người thầy">Sách và Người thầy</a><a href="dhcsadmin/index.php?com=news&act=edit&id_danhmuc=47&id_list=0&type=su-kien&id=3997" class="sua_admin" target="_blank" title="Sửa bài viết" rel="nofollow"><i class="fas fa-pencil-alt"></i></a></h3>
-			            <p class="ngaytao"><i class="fa fa-calendar" aria-hidden="true"></i>23.04.2021</p>
-					</div>
-													<div class="item_sk">
-						<p class="img"><a href="truong-dai-hoc-SND-duoc-bo-cong-an-khen-thuong-trong-cong-tac-phat-trien-van-hoa-doc" title="Trường Đại học SND được Bộ Công an khen thưởng  trong công tác phát triển văn hóa đọc"><img class="no_lazy" src="upload/news/14-4-85545_380x2508610_380x250.jpg" alt="Trường Đại học SND được Bộ Công an khen thưởng  trong công tác phát triển văn hóa đọc" onerror="this.src='images/380x250.png'" /></a></p>      
-			            <h3><a href="truong-dai-hoc-SND-duoc-bo-cong-an-khen-thuong-trong-cong-tac-phat-trien-van-hoa-doc" title="Trường Đại học SND được Bộ Công an khen thưởng  trong công tác phát triển văn hóa đọc">Trường Đại học SND được Bộ Công an khen thưởng  trong công tác phát triển văn hóa đọc</a><a href="dhcsadmin/index.php?com=news&act=edit&id_danhmuc=47&id_list=0&type=su-kien&id=3996" class="sua_admin" target="_blank" title="Sửa bài viết" rel="nofollow"><i class="fas fa-pencil-alt"></i></a></h3>
-			            <p class="ngaytao"><i class="fa fa-calendar" aria-hidden="true"></i>23.04.2021</p>
-					</div>
-													<div class="item_sk">
-						<p class="img"><a href="hoi-thao-khoa-hoc-truong-dai-hoc-SND--45-nam-xay-dung-va-dinh-huong-phat-trien" title="Hội thảo Khoa học “Trường Đại học SND - 45 năm xây dựng và định hướng phát triển”"><img class="no_lazy" src="upload/news/9-4-4_17986_380x2508931_380x250.jpg" alt="Hội thảo Khoa học “Trường Đại học SND - 45 năm xây dựng và định hướng phát triển”" onerror="this.src='images/380x250.png'" /></a></p>      
-			            <h3><a href="hoi-thao-khoa-hoc-truong-dai-hoc-SND--45-nam-xay-dung-va-dinh-huong-phat-trien" title="Hội thảo Khoa học “Trường Đại học SND - 45 năm xây dựng và định hướng phát triển”">Hội thảo Khoa học “Trường Đại học SND - 45 năm xây dựng và định hướng phát triển”</a><a href="dhcsadmin/index.php?com=news&act=edit&id_danhmuc=47&id_list=0&type=su-kien&id=3995" class="sua_admin" target="_blank" title="Sửa bài viết" rel="nofollow"><i class="fas fa-pencil-alt"></i></a></h3>
-			            <p class="ngaytao"><i class="fa fa-calendar" aria-hidden="true"></i>23.04.2021</p>
-					</div>
-													<div class="item_sk">
-						<p class="img"><a href="tuan-qua-vong-loai-cac-giai-dau-trong-khuon-kho-hoi-thao-chao-mung-ky-niem-45-nam-ngay-truyen-thong" title="Tuần qua, vòng loại các giải đấu trong khuôn khổ Hội thao chào mừng kỷ niệm 45 năm Ngày truyền thống"><img class="no_lazy" src="upload/news/21-3-12475_380x250.jpg" alt="Tuần qua, vòng loại các giải đấu trong khuôn khổ Hội thao chào mừng kỷ niệm 45 năm Ngày truyền thống" onerror="this.src='images/380x250.png'" /></a></p>      
-			            <h3><a href="tuan-qua-vong-loai-cac-giai-dau-trong-khuon-kho-hoi-thao-chao-mung-ky-niem-45-nam-ngay-truyen-thong" title="Tuần qua, vòng loại các giải đấu trong khuôn khổ Hội thao chào mừng kỷ niệm 45 năm Ngày truyền thống">Tuần qua, vòng loại các giải đấu trong khuôn khổ Hội thao chào mừng kỷ niệm 45 năm Ngày truyền thống</a><a href="dhcsadmin/index.php?com=news&act=edit&id_danhmuc=47&id_list=0&type=su-kien&id=3959" class="sua_admin" target="_blank" title="Sửa bài viết" rel="nofollow"><i class="fas fa-pencil-alt"></i></a></h3>
-			            <p class="ngaytao"><i class="fa fa-calendar" aria-hidden="true"></i>12.04.2021</p>
-					</div>
-													<div class="item_sk">
-						<p class="img"><a href="cung-hoi-vien-nu-dai-hoc-SND-tranh-tai-the-thao" title="Cùng hội viên nữ Đại học SND tranh tài thể thao"><img class="no_lazy" src="upload/news/2-46764_380x250.jpg" alt="Cùng hội viên nữ Đại học SND tranh tài thể thao" onerror="this.src='images/380x250.png'" /></a></p>      
-			            <h3><a href="cung-hoi-vien-nu-dai-hoc-SND-tranh-tai-the-thao" title="Cùng hội viên nữ Đại học SND tranh tài thể thao">Cùng hội viên nữ Đại học SND tranh tài thể thao</a><a href="dhcsadmin/index.php?com=news&act=edit&id_danhmuc=47&id_list=0&type=su-kien&id=3901" class="sua_admin" target="_blank" title="Sửa bài viết" rel="nofollow"><i class="fas fa-pencil-alt"></i></a></h3>
-			            <p class="ngaytao"><i class="fa fa-calendar" aria-hidden="true"></i>01.04.2021</p>
-					</div>
-							</div>
+        function closeModal() {
+            modal.classList.add('hidden');
+            document.body.style.overflow = 'auto';
+        }
 
-	</div>
-</div>
-</div>
+        // Close modal on outside click
+        window.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                closeModal();
+            }
+        });
 
+        // Counter Animation with Intersection Observer
+        const counters = document.querySelectorAll('.counter');
+        let animated = false;
 
-<div class="wap_gioithieu main_fix">
-	<div class="tieude_giua"><div>Giới thiệu</div></div>
-	<div class="chay_gioithieu control_slick">
-	    	        <div><div class="item_gt item_gt2">
-	            <p class="img chayvien">
-	                <i class="i_chayvien"></i><i class="i_chayvien"></i><i class="i_chayvien"></i><i class="i_chayvien"></i>
-	                <a href="kiem-dinh-chat-luong-truong-dai-hoc" title="Kiểm định chất lượng Trường Đại học"><img class="no_lazy" data-lazy="upload/news/kdcl9737_280x270.png" alt="Kiểm định chất lượng Trường Đại học" onerror="this.src='images/280x270.png'" /></a>
-	            </p>      
-	            <h3><a href="kiem-dinh-chat-luong-truong-dai-hoc" title="Kiểm định chất lượng Trường Đại học">Kiểm định chất lượng Trường Đại học</a><a href="dhcsadmin/index.php?com=news&act=edit&id_danhmuc=0&id_list=0&type=gioi-thieu&id=4567" class="sua_admin" target="_blank" title="Sửa bài viết" rel="nofollow"><i class="fas fa-pencil-alt"></i></a></h3>      
-	        </div></div>
-	    	        <div><div class="item_gt item_gt2">
-	            <p class="img chayvien">
-	                <i class="i_chayvien"></i><i class="i_chayvien"></i><i class="i_chayvien"></i><i class="i_chayvien"></i>
-	                <a href="bang-vang-thanh-tich" title="Bảng vàng thành tích"><img class="no_lazy" data-lazy="upload/news/z4027391236554_f35a4765633f407f5ec8ab0136c3c7ce2226_280x270.jpg" alt="Bảng vàng thành tích" onerror="this.src='images/280x270.png'" /></a>
-	            </p>      
-	            <h3><a href="bang-vang-thanh-tich" title="Bảng vàng thành tích">Bảng vàng thành tích</a><a href="dhcsadmin/index.php?com=news&act=edit&id_danhmuc=0&id_list=0&type=gioi-thieu&id=3994" class="sua_admin" target="_blank" title="Sửa bài viết" rel="nofollow"><i class="fas fa-pencil-alt"></i></a></h3>      
-	        </div></div>
-	    	        <div><div class="item_gt item_gt2">
-	            <p class="img chayvien">
-	                <i class="i_chayvien"></i><i class="i_chayvien"></i><i class="i_chayvien"></i><i class="i_chayvien"></i>
-	                <a href="lich-su-phat-trien" title="Lịch sử phát triển"><img class="no_lazy" data-lazy="upload/news/quang-canh-cong-truong-13-hs-quan-SND-ii-web6224_280x270.jpg" alt="Lịch sử phát triển" onerror="this.src='images/280x270.png'" /></a>
-	            </p>      
-	            <h3><a href="lich-su-phat-trien" title="Lịch sử phát triển">Lịch sử phát triển</a><a href="dhcsadmin/index.php?com=news&act=edit&id_danhmuc=0&id_list=0&type=gioi-thieu&id=3904" class="sua_admin" target="_blank" title="Sửa bài viết" rel="nofollow"><i class="fas fa-pencil-alt"></i></a></h3>      
-	        </div></div>
-	    	        <div><div class="item_gt item_gt2">
-	            <p class="img chayvien">
-	                <i class="i_chayvien"></i><i class="i_chayvien"></i><i class="i_chayvien"></i><i class="i_chayvien"></i>
-	                <a href="chuc-nang-nhiem-vu" title="Chức năng nhiệm vụ"><img class="no_lazy" data-lazy="upload/news/logo-truong-dhcs6565_280x270.jpg" alt="Chức năng nhiệm vụ" onerror="this.src='images/280x270.png'" /></a>
-	            </p>      
-	            <h3><a href="chuc-nang-nhiem-vu" title="Chức năng nhiệm vụ">Chức năng nhiệm vụ</a><a href="dhcsadmin/index.php?com=news&act=edit&id_danhmuc=0&id_list=0&type=gioi-thieu&id=3905" class="sua_admin" target="_blank" title="Sửa bài viết" rel="nofollow"><i class="fas fa-pencil-alt"></i></a></h3>      
-	        </div></div>
-	    	        <div><div class="item_gt item_gt2">
-	            <p class="img chayvien">
-	                <i class="i_chayvien"></i><i class="i_chayvien"></i><i class="i_chayvien"></i><i class="i_chayvien"></i>
-	                <a href="ban-giam-hieu-nha-truong-qua-cac-thoi-ky" title="Ban giám hiệu Nhà trường qua các thời kỳ"><img class="no_lazy" data-lazy="upload/news/slide-2-028510_280x270.png" alt="Ban giám hiệu Nhà trường qua các thời kỳ" onerror="this.src='images/280x270.png'" /></a>
-	            </p>      
-	            <h3><a href="ban-giam-hieu-nha-truong-qua-cac-thoi-ky" title="Ban giám hiệu Nhà trường qua các thời kỳ">Ban giám hiệu Nhà trường qua các thời kỳ</a><a href="dhcsadmin/index.php?com=news&act=edit&id_danhmuc=0&id_list=0&type=gioi-thieu&id=3980" class="sua_admin" target="_blank" title="Sửa bài viết" rel="nofollow"><i class="fas fa-pencil-alt"></i></a></h3>      
-	        </div></div>
-	    	        <div><div class="item_gt item_gt2">
-	            <p class="img chayvien">
-	                <i class="i_chayvien"></i><i class="i_chayvien"></i><i class="i_chayvien"></i><i class="i_chayvien"></i>
-	                <a href="tam-nhin-su-mang-va-van-hoa" title="Tầm nhìn, sứ mạng và văn hóa"><img class="no_lazy" data-lazy="upload/news/z3201588117784_d80e28c4804a153b7db97f4b141ea6eb5427_280x270.jpg" alt="Tầm nhìn, sứ mạng và văn hóa" onerror="this.src='images/280x270.png'" /></a>
-	            </p>      
-	            <h3><a href="tam-nhin-su-mang-va-van-hoa" title="Tầm nhìn, sứ mạng và văn hóa">Tầm nhìn, sứ mạng và văn hóa</a><a href="dhcsadmin/index.php?com=news&act=edit&id_danhmuc=0&id_list=0&type=gioi-thieu&id=3988" class="sua_admin" target="_blank" title="Sửa bài viết" rel="nofollow"><i class="fas fa-pencil-alt"></i></a></h3>      
-	        </div></div>
-	    		</div>
-	</div>
-</div>        <div class="clear"></div>
-    </div><!---END .main_content-->
+        function runCounters() {
+            counters.forEach(counter => {
+                const target = +counter.getAttribute('data-target');
+                let count = 0;
+                const speed = target / 40; // speed of counting
 
-    <div class="wap_footer clearfix">
-        <div class="wap_bottom">
-    <div class="bottom main_fix">
-        <ul>
-            <li><a class="active" href="">Trang chủ</a></li>
-            
-            <li><a class="" href="gioi-thieu">Giới thiệu</a></li>
+                const updateCount = () => {
+                    count += speed;
+                    if (count < target) {
+                        counter.innerText = Math.ceil(count).toLocaleString();
+                        setTimeout(updateCount, 40);
+                    } else {
+                        counter.innerText = target.toLocaleString() + (target > 1000 && target !== 15000 && target !== 50000 ? '+' : (target >= 15000 ? '+' : ''));
+                    }
+                };
+                updateCount();
+            });
+        }
 
-            <li><a class="" href="tin-tuc">Tin tức</a></li>
-
-            <li><a class="" href="van-ban">Hệ thống văn bản</a>
-            </li>
-
-            <li><a class="" href="lien-he">Hòm thư góp ý</a></li>
-            
-            <li><a class="" href="tra-diem-thi">Tra cứu điểm thi</a></li>
-            
-            <li><a class="" href="su-kien">Sự kiện</a></li>
-        </ul>
-
-        <select class="lkweb_f">
-            <option value="">Liên kết Website</option>
-                             <option value="http://bocongan.gov.vn/">Cổng thông tin BCA</option>
-                             <option value="https://hvannd.edu.vn/">Học viện an ninh nhân dân</option>
-                             <option value="http://www.hvSND.edu.vn/">Học viện CANH SAT NHAN DAN</option>
-                             <option value="http://dhannd.edu.vn/">Đại học An ninh nhân dân</option>
-                             <option value="https://www.antv.gov.vn/">Truyền hình CAND</option>
-                    </select>
-    </div>
-</div>
-
-
-<div class="footer main_fix">
-    <div class="main_footer">
-        <p class="logo_f"><a href=""><img src="upload/hinhanh/03-6-logo-t05-9038.png" alt="Banner" onerror="this.src='//placehold.it/150x150'" /></a></p>
-        <p> </p>
-
-<p><strong style="color: rgb(250, 235, 215);">TRƯỜNG ĐẠI HỌC CANH SAT NHAN DAN</strong></p>
-
-<p><span style="color:#FAEBD7;"><strong>Trụ sở chính:</strong> 42 Nguyễn Hữu Phước - Phường An Lạc - Quận 1 - TP Hồ Chí Minh</span></p>
-
-<p><span style="color:#FAEBD7;"><strong>Địa điểm đào tạo số 2:</strong> 174B Kha Vạn Cân - Phường Đông Tây - TP Thủ Đức - TP Hồ Chí Minh</span></p>
-
-<p><strong style="color: rgb(250, 235, 215);">Địa điểm đào tạo số</strong><span style="color:#FAEBD7;"><strong> 3</strong>: Phường An Tây - Quận Hồng Bàng - TP Cần Thơ</span></p>
-
-<p><strong><span style="color:#FAEBD7;">Email liên hệ: contact@daihoSND.npo.io.vn</span></strong></p>
-
-<p> </p>
-
-<p> </p>
-        <div class="clear"></div>
-    </div>
-    <div class="item_ft">
-        <p><span style="color:#FAEBD7;"><span style="font-size:18px;"><strong>Điện thoại: </strong></span></span></p>
-
-<p><strong style="color: rgb(250, 235, 215);">Trụ sở chính:</strong><span style="color: rgb(250, 235, 215);"> (028)69885550 - Fax: (028)61624978</span></p>
-
-    </div>
-    <div class="item_ft">
-        <p><a href="https://tinSND.vn/danh-ba-tin-nhiem/dhSNDeduvn-1702437465" target="_blank" title="Chung nhan Tin Nhiem Mang"><img alt="Chung nhan Tin Nhiem Mang" height="auto" src="upload/hinhanh/tinnhiemmang.png" width="150px" /></a></p>
-    </div>
-</div>    </div><!---END .wap_footer-->
-
-    <div class="wap_copy clearfix">
-        <div class="copy main_fix clearfix">
-            Copyrights © 2020 TRƯỜNG ĐẠI HỌC CANH SAT NHAN DAN<ul>
-    <li></li>
-    
-</ul>
-        </div><!---END .copy-->
-    </div><!---END .wap_copy-->
-</div><!---END .wapper-->
-
-<div class="menu_mobi_add">
-	<span class="close_menu">X</span>
-	<div class="lang">
-        <a href="index.php?com=ngonngu&lang=en" title="English"><img src="images/en.png" alt="English" /> Tiếng anh</a>
-        <a href="index.php?com=ngonngu&lang=" title="Việt Nam"><img src="images/vi.png" alt="Việt Nam" />Tiếng việt</a>
-    </div><!--END #lang-->
-
-    <a class="search" href="tim-kiem"><i class="fa fa-search" aria-hidden="true"></i></a>
-
-	<ul>
-        <li><a class="active" href="">Trang chủ</a></li>
-        
-        <li><a class="" href="gioi-thieu">Giới thiệu</a></li>
-
-        <li><a class="" href="tin-tuc">Tin tức</a>
-            <ul><li><a href="tin-noi-bat">Tin nổi bật</a><ul><li><a href="tin-quoc-te">Tin quốc tế</a></li><li><a href="tong-bi-thu-nguyen-phu-trong-voi-dang-nha-nuoc-va-nhan-dan-viet-nam">Tổng Bí thư Nguyễn Phú Trọng với Đảng, Nhà nước và Nhân dân Việt Nam</a></li><li><a href="dai-hoi-dang-cac-cap-va-dai-hoi-dai-bieu-toan-quoc-lan-thu-xiv-cua-dang">Đại hội Đảng các cấp và Đại hội Đại biểu toàn quốc lần thứ XIV của Đảng</a></li><li><a href="tin-trong-nuoc">Tin trong nước</a></li><li><a href="tin-cua-truong">Tin của trường</a></li><li><a href="thong-tin-tuyen-sinh">Thông tin tuyển sinh</a></li><li><a href="hoat-dong-cua-nganh">Hoạt động của ngành</a></li><li><a href="phong-chong-dich-benh-covid--19">Phòng Chống dịch bệnh Covid - 19</a></li></ul></li><li><a href="giao-duc--dao-tao">Giáo dục - Đào tạo</a><ul><li><a href="quy-dinh--quy-che">Quy định - Quy chế</a></li><li><a href="khao-thi-va-dam-bao-chat-luong-dao-tao">Khảo thí và đảm bảo chất lượng đào tạo</a></li><li><a href="doi-moi-nd-pp-day-hoc">Đổi mới ND-PP dạy học</a></li><li><a href="quan-ly-dao-tao">Quản lý đào tạo</a></li></ul></li><li><a href="nghien-cuu--trao-doi">Nghiên cứu - Trao đổi</a><ul><li><a href="nghien-cuu--trao-doi">Nghiên cứu - Trao đổi</a></li><li><a href="phong-chong-tham-nhung">Phòng chống tham nhũng</a></li><li><a href="bao-ve-nen-tang-tu-tuong-cua-dang">Bảo vệ nền tảng tư tưởng của Đảng</a></li><li><a href="bai-du-thi-bao-dam-an-ninh-trat-tu-o-co-so">Bài dự thi "Bảo đảm an ninh, trật tự ở cơ sở"</a></li><li><a href="tuyen-truyen-pho-bien-giao-duc-phap-luat">Tuyên truyền phổ biến giáo dục pháp luật</a></li></ul></li><li><a href="khoa-hoc-cong-nghe">Khoa học Công nghệ</a><ul><li><a href="hoi-thao-khoa-hoc">Hội thảo khoa học</a></li></ul></li><li><a href="cac-mat-cong-tac">Các mặt công tác</a><ul><li><a href="cong-tac-to-chuc">Công tác tổ chức</a></li><li><a href="ky-niem-75-nam-ngay-truyen-thong-luc-luong-hau-can--ky-thuat-cand">Kỷ niệm 75 năm Ngày truyền thống lực lượng Hậu cần - Kỹ thuật CAND</a></li><li><a href="cong-tac-dang">Công tác Đảng</a></li><li><a href="doan-the">Đoàn thể</a></li><li><a href="hau-can">Hậu Cần</a></li><li><a href="doi-ngoai-va-hop-tac-quoc-te">Đối ngoại và hợp tác quốc tế</a></li><li><a href="cong-tac-khac">Công tác khác</a></li></ul></li><li><a href="dao-tao-sinh-vien-quoc-te">Đào tạo sinh viên Quốc tế</a></li><li><a href="goc-chia-se">Góc chia sẻ</a><ul><li><a href="cuu-sinh-vien">Cựu sinh viên</a></li><li><a href="hoc-vien-nha-truong">Học viên Nhà trường</a></li><li><a href="dien-hinh-tien-tien">Điển hình tiên tiến</a></li></ul></li></ul>        </li>
-
-        <li><a class="" href="van-ban">Hệ thống văn bản</a>
-        </li>
-
-        <li><a class="" href="lien-he">Hòm thư góp ý</a></li>
-        
-        <li><a class="" href="tra-diem-thi">Tra cứu điểm thi</a></li>
-        
-        <li><a class="" href="su-kien">Sự kiện<img src="images/i_hot.gif" alt="Sự kiện"></a>
-            <ul><li><a href="thong-bao-nha-truong">THÔNG BÁO NHÀ TRƯỜNG</a><li><a href="thu-vien-video">THƯ VIỆN VIDEO</a><li><a href="ky-niem-46-nam-ngay-truyen-thong-thanh-lap-truong">KỶ NIỆM 46 NĂM NGÀY TRUYỀN THỐNG THÀNH LẬP TRƯỜNG</a></ul>        </li>
-    </ul>
-
-</div><h1 style="position:absolute; top:-1000px;"></h1><h2 style="position:absolute; top:-1000px;"></h2><h3 style="position:absolute; top:-1000px;"></h3><div id="fb-root"></div>
-
-<script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js" ></script>
-<script type="text/javascript" src="js/my_script.js"></script>
-
-<script type="text/javascript" src="js/jssor.js"></script>
-<script type="text/javascript" src="js/jssor.slider.js"></script>
-<script type="text/javascript" src="js/js_jssor_slider.js"></script>
-
-<script type="text/javascript" src="js/jquery.fancybox.min.js"></script>
-<script type="text/javascript" src="js/slick.min.js"></script>
-<script type="text/javascript">
-    $(document).ready(function(){
-        $('.chay_gioithieu').slick({
-          lazyLoad: 'ondemand',
-          infinite: true,//Lặp lại
-          accessibility:false,
-          slidesToShow: 4,    //Số item hiển thị
-          slidesToScroll: 1, //Số item cuộn khi chạy
-          autoplay:true,  //Tự động chạy
-          autoplaySpeed:3000,  //Tốc độ chạy
-          speed:1000,//Tốc độ chuyển slider
-          arrows:true, //Hiển thị mũi tên
-          centerMode:false,  //item nằm giữa
-          dots:false,  //Hiển thị dấu chấm
-          draggable:true,  //Kích hoạt tính năng kéo chuột
-          pauseOnHover:true,
-          responsive: [
-          {
-              breakpoint: 960,
-                settings: {
-                slidesToShow: 3,
-                slidesToScroll: 1,
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting && !animated) {
+                    runCounters();
+                    animated = true;
                 }
-              },
-              {
-              breakpoint: 604,
-                settings: {
-                slidesToShow: 2,
-                slidesToScroll: 1,
-                }
-              }
-          ]
-        });
+            });
+        }, { threshold: 0.5 });
 
-        $('.lkweb').slick({
-          lazyLoad: 'ondemand',
-          infinite: true,//Lặp lại
-          accessibility:false,
-          slidesToShow: 5,    //Số item hiển thị
-          slidesToScroll: 1, //Số item cuộn khi chạy
-          autoplay:true,  //Tự động chạy
-          autoplaySpeed:3000,  //Tốc độ chạy
-          speed:1000,//Tốc độ chuyển slider
-          arrows:true, //Hiển thị mũi tên
-          centerMode:false,  //item nằm giữa
-          dots:false,  //Hiển thị dấu chấm
-          draggable:true,  //Kích hoạt tính năng kéo chuột
-          pauseOnHover:true,
-           responsive: [
-          {
-              breakpoint: 960,
-                settings: {
-                slidesToShow: 3,
-                slidesToScroll: 1,
-                }
-              },
-              {
-              breakpoint: 461,
-                settings: {
-                slidesToShow: 2,
-                slidesToScroll: 1,
-                }
-              }
-          ]
-        });
-
-        $('.chay_sukien').slick({
-            vertical:true,
-            lazyLoad: 'ondemand',
-            infinite: true,//Lặp lại
-            accessibility:false,
-            slidesToShow: 2,    //Số item hiển thị
-            slidesToScroll: 1, //Số item cuộn khi chạy
-            autoplay:true,  //Tự động chạy
-            autoplaySpeed:3000,  //Tốc độ chạy
-            speed:1000,//Tốc độ chuyển slider
-            arrows:false, //Hiển thị mũi tên
-            centerMode:false,  //item nằm giữa
-            dots:false,  //Hiển thị dấu chấm
-            draggable:true,  //Kích hoạt tính năng kéo chuột
-            pauseOnHover:true,
-        });
-
-    });
-</script>
-
-<script type="text/javascript">
-	$(document).ready(function(e) {
-    $('.lkweb_f').change(function(){
-        var id = $(this).val();
-        location.href=id;
-    });
-    $('.cap1 li a').click(function(){
-       var id = $(this).attr('href');
-       $('.cap1 li a').removeClass('active');
-       $(this).addClass('active');
-       $.ajax({
-          type:'post',
-          url:'ajax/tintuc.php',
-          data:{id:id,id_gianhang:"3",link_gianhang:""},
-          success:function(kq){
-            $('.tintuc').html(kq);
-          }
-       })
-       return false;
-    })
-		//var menu_mobi = $('.menu ul').html();
-		//$('.menu_mobi_add').append('<span class="close_menu">X</span><ul>'+menu_mobi+'</ul>');
-		$(".menu_mobi_add ul li").each(function(index, element) {
-            if($(this).children('ul').children('li').length>0){
-				$(this).children('a').append('<i class="fas fa-chevron-right"></i>');
-			}
-        });
-		$(".menu_mobi_add ul li a i").click(function(){
-			if($(this).parent('a').hasClass('active2')){
-				$(this).parent('a').removeClass('active2');
-				if($(this).parent('a').parent('li').children('ul').children('li').length > 0){
-					$(this).parent('a').parent('li').children('ul').hide(300);
-					return false;
-				}
-			}
-			else{
-				$(this).parent('a').addClass('active2');
-				if($(this).parents('li').children('ul').children('li').length > 0){
-					$(".menu_m ul li ul").hide(0);
-					$(this).parents('li').children('ul').show(300);
-					return false;
-				}
-			}
-		});
-
-		$('.icon_menu_mobi,.close_menu,.menu_baophu').click(function(){
-			if($('.menu_mobi_add').hasClass('menu_mobi_active'))
-			{
-				$('.menu_mobi_add').removeClass('menu_mobi_active');
-				$('.menu_baophu').fadeOut(300);
-			}
-			else
-			{
-				$('.menu_mobi_add').addClass('menu_mobi_active');
-				$('.menu_baophu').fadeIn(300);
-			}
-			return false;
-		});
-
-		$(".menu ul li").hover(function(){
-			$(this).find('ul:first').css({visibility: "visible",display: "none"}).show(300);
-			},function(){
-			$(this).find('ul:first').css({visibility: "hidden"});
-			});
-		$(".menu ul li").hover(function(){
-				$(this).find('>a').addClass('active2');
-			},function(){
-				$(this).find('>a').removeClass('active2');
-		});
-
-        $('img').each(function(index, element) {
-			if(!$(this).attr('alt') || $(this).attr('alt')=='')
-			{
-				$(this).attr('alt','TRƯỜNG ĐẠI HỌC CANH SAT NHAN DAN');
-			}
-        });
-    });
-</script>
-
-
+        const counterSection = document.querySelector('.counter').parentElement.parentElement;
+        observer.observe(counterSection);
+    </script>
 
 </body>
 </html>
